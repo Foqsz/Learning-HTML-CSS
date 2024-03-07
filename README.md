@@ -1,4 +1,4 @@
-# Victor Vinicius Alves de Lima Souza
+# Aprendizado Git e GitHub
 
 Olá! 👋 Eu sou o Victor Vinicius Alves de Lima Souza, um entusiasta de programação e atualmente mergulhando no universo do Git e GitHub. 
 
