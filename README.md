@@ -1,6 +1,6 @@
 # Aprendizado Git e GitHub
 
-Olá! 👋 Eu sou o Victor Vinicius Alves de Lima Souza, um entusiasta de programação e atualmente mergulhando no universo do Git e GitHub. 
+Olá! 👋 Eu sou o Victor Vinicius Alves de Lima Souza, programador BackEnd e agora estudando FrontEnd.
 
 ## Sobre Mim
 
