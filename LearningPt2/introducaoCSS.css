@@ -1,0 +1,31 @@
+h1 {
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+h2 {
+  color: royalblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+mark {
+  color: red;
+}
+h3 {
+  color: royalblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-style: oblique;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-indent: 30px;
+  text-size-adjust: 28px;
+  color: mediumseagreen;
+  text-transform: capitalize;
+}
