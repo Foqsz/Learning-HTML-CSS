@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #2b2a2a;
 }
 h1 {
   color: red;
@@ -39,4 +39,11 @@ p {
 a {
   text-decoration: none;
   font-variant: normal;
+}
+.destaque {
+  color: #0572ff;
+  font-weight: bold;
+}
+#titulo {
+  color: pink;
 }
