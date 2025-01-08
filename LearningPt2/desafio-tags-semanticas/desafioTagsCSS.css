@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+  background-color: #000000;
+}
+.headerClass {
+  background-image: url(imagens/img-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height:500px;
+}
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 40pt;
+  color: rgb(255, 255, 255);  
+  text-align: center;
+  margin-top: 10%;
+}
+.frase {
+  margin: 0% auto; /* Centraliza horizontalmente */
+  color: white;
+  background-color: black;
+  list-style: none;
+  padding: 10px;
+  display: block; /* Permite o comportamento de bloco */
+  text-align: center;
+  width: fit-content; /* Opcional: ajusta ao conteúdo */
+}
+
+.menu {
+  text-align: right;
+  margin-right: 30px;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px;
+  margin: 10px
+}
+.menu a {
+  background-color: rgb(255, 0, 0);
+  padding: 16px;
+  display: block;
+  color: #f9f9f9;
+}
+.menu a:hover {
+  background-color: #848482;
+  color: #413f3f;
+  text-decoration: none;
+}
+.link
+{
+    color: white;
+}
+article {
+  background-color: rgb(29, 29, 29);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+h2 {
+  background-color: #ff0000;
+  border-radius: 10px;
+  margin-top: 0px;
+  color: white;
+}
+a {
+  background-color: #ff0000;
+  padding: 10px;
+  border-radius: 10px;
+}
+footer p {
+  background-color: #ff0000;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  margin-top: 30px;
+}
+p{
+    color: white;
+}
