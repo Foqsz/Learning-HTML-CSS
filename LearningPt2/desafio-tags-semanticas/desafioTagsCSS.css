@@ -70,14 +70,15 @@ h1 {
   color: #ffffff;
 }
 
-.container a {
-  color: white;
-  margin-top: 10px; /* Espaçamento superior */
+.btn{
+  color: white; 
   background-color: #ff0000; /* Fundo vermelho */
   padding: 10px; /* Espaçamento interno */
   border: 2px solid #ffffff; /* Borda branca */
   text-decoration: none; /* Remove sublinhado do link */
-  display: inline-block; /* Garante que o link seja um bloco */
+  display: block; /* Garante que o link seja um bloco */
+  width: fit-content;
+  margin-left: auto; 
 }
 
 .container article {
