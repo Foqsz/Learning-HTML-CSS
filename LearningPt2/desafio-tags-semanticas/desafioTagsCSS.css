@@ -23,7 +23,7 @@ h1 {
 }
 
 .hero-content {
-  margin: 50px auto;
+  margin: 50px auto 0;
   width: 80%;
   text-align: center;
 }
@@ -31,60 +31,76 @@ h1 {
 .hero-content h1 {
   font-size: 56px;
   text-shadow: 2px 5px 5px rgb(0, 11, 1); /* valores negativos para esquerda, valores positivos para direita */
+  margin-bottom: 0;
 }
 
 .hero-content p {
   text-shadow: 2px 5px 5px rgb(0, 11, 1);
-  background-color: rgba(0,0,0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   margin: 0;
   display: inline-block; /* para diminuir o bloco */
   font-size: 18px;
   padding: 10px;
-  border-bottom: 2px solid #ffffff; 
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 5px;
 }
 
-.menu {
+.menu ul {
   text-align: right;
-  margin-right: 30px;
+  margin: 10px 50px 0 0;
 }
 .menu li {
   list-style: none;
   display: inline-block;
   padding: 0px;
-  margin: 10px;
+  margin-left: 10px;
 }
 .menu a {
   background-color: rgb(255, 0, 0);
   padding: 16px;
   display: block;
   color: #f9f9f9;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid #ffffff;
 }
 .menu a:hover {
   background-color: #000000;
-  color: #413f3f;
-  text-decoration: none;
+  color: #ffffff;
 }
-a,
-.link {
+
+.container a {
   color: white;
-  margin-top: 10px;
-  background-color: #ff0000;
-  padding: 10px;
-  border-radius: 10px;
+  margin-top: 10px; /* Espaçamento superior */
+  background-color: #ff0000; /* Fundo vermelho */
+  padding: 10px; /* Espaçamento interno */
+  border: 2px solid #ffffff; /* Borda branca */
+  text-decoration: none; /* Remove sublinhado do link */
+  display: inline-block; /* Garante que o link seja um bloco */
 }
-article {
-  background-color: rgb(29, 29, 29);
-  margin-top: 10px;
+
+.container article {
+  background-color: rgb(29, 29, 29); 
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 5px; 
+  margin-bottom: 15px;  
+  margin-top: 15px;
 }
-h2 {
+.container h2 {
   background-color: #ff0000;
   border-radius: 10px;
   margin-top: 0px;
   color: white;
   padding: 7px;
 }
+
+.container {
+  width: 90%;
+  margin: auto; 
+  max-width: 860px;
+}
+
 footer p {
   background-color: #ff0000;
   text-align: center;
@@ -95,8 +111,4 @@ footer p {
 p {
   color: white;
   margin-right: 10px;
-}
-section {
-  width: 80%;
-  margin: auto;
 }
