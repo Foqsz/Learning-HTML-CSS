@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fit Content</title>
+
+    <style>
+      .container{
+        border: 2px solid black;
+        padding: 16px;
+        width: 300px;
+        margin-bottom: 16px;
+        width: fit-content /*usado fit-content para o border se adequar ao texto*/
+      }
+      .item{
+        background-color: blueviolet;
+        margin-bottom: 10px;
+        padding: 5px;
+
+        width: fit-content;
+      }
+      .fit-content .item{
+        width: fit-content;
+      }
+      .min-content .item{
+        width: min-content;
+      }
+      .max-content .item{
+        width: max-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container fit-content">
+      <div class="item">lorem</div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+        excepturi?
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eum ut
+        aspernatur vero ab veniam expedita optio enim soluta eveniet deleniti
+        temporibus laborum! Vero, adipisci.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        ea aspernatur ullam quae animi reiciendis ipsum temporibus neque
+        corrupti ad reprehenderit laboriosam quidem velit, magni libero mollitia
+        tempore ex alias atque. Debitis recusandae totam nisi ullam veniam
+        neque, magni eaque laudantium, fugit perferendis aspernatur reiciendis
+        enim aut! Cumque, dolor! Deserunt unde facilis veritatis necessitatibus
+        praesentium obcaecati non adipisci dolore, eaque quae omnis a hic
+        inventore, eveniet eius nam aliquid veniam placeat incidunt sequi
+        suscipit qui?
+      </div>
+    </div>
+
+    <div class="container min-content">
+      <div class="item">lorem</div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+        excepturi?
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eum ut
+        aspernatur vero ab veniam expedita optio enim soluta eveniet deleniti
+        temporibus laborum! Vero, adipisci.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        ea aspernatur ullam quae animi reiciendis ipsum temporibus neque
+        corrupti ad reprehenderit laboriosam quidem velit, magni libero mollitia
+        tempore ex alias atque. Debitis recusandae totam nisi ullam veniam
+        neque, magni eaque laudantium, fugit perferendis aspernatur reiciendis
+        enim aut! Cumque, dolor! Deserunt unde facilis veritatis necessitatibus
+        praesentium obcaecati non adipisci dolore, eaque quae omnis a hic
+        inventore, eveniet eius nam aliquid veniam placeat incidunt sequi
+        suscipit qui?
+      </div>
+    </div>
+
+    <div class="container max-content">
+      <div class="item">lorem</div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+        excepturi?
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eum ut
+        aspernatur vero ab veniam expedita optio enim soluta eveniet deleniti
+        temporibus laborum! Vero, adipisci.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        ea aspernatur ullam quae animi reiciendis ipsum temporibus neque
+        corrupti ad reprehenderit laboriosam quidem velit, magni libero mollitia
+        tempore ex alias atque. Debitis recusandae totam nisi ullam veniam
+        neque, magni eaque laudantium, fugit perferendis aspernatur reiciendis
+        enim aut! Cumque, dolor! Deserunt unde facilis veritatis necessitatibus
+        praesentium obcaecati non adipisci dolore, eaque quae omnis a hic
+        inventore, eveniet eius nam aliquid veniam placeat incidunt sequi
+        suscipit qui?
+      </div>
+    </div>
+  </body>
+</html>
