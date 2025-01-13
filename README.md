@@ -9,7 +9,7 @@ Olá! 👋 Eu sou o Victor Vinicius Alves de Lima Souza, programador BackEnd e a
 
 ## Atualmente Estou Aprendendo
 
-- **Curso na Udemy:** 
+- **Curso na Udemy:** Fundamentos HTML e CSS com Java Script
 
 ## O Que Esperar Neste Repositório
 
