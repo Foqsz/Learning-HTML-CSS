@@ -10,7 +10,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 500px;
+  height: 500px; 
 }
 
 h1 {
@@ -79,6 +79,7 @@ h1 {
   display: block; /* Garante que o link seja um bloco */
   width: fit-content;
   margin-left: auto; 
+  text-shadow: 2px 2px 2px black;
 }
 
 .container article {
@@ -114,4 +115,8 @@ h1 {
 p {
   color: white;
   margin-right: 10px;
+}
+
+h2{
+  text-shadow: 2px 2px 2px black;
 }
