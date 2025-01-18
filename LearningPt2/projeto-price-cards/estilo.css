@@ -39,7 +39,8 @@ body{
     text-decoration: none;
     color: white; 
     padding: 14px;
-    border-radius: 6px;
+    border-radius: 6px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header__nav a:hover{
@@ -49,4 +50,5 @@ body{
 a.header__nav--active{
     background-color: #cbe300; 
     color: #0c1014;
+    pointer-events: none; /*eventos do ponteiro do mouse*/ 
 }
