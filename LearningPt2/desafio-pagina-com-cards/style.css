@@ -1,0 +1,83 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  /* Define a imagem de fundo do corpo da página */
+  background-image: url(imagens/bg-2.jpg);
+
+  /* Impede a repetição da imagem de fundo */
+  background-repeat: no-repeat;
+
+  /* Ajusta a imagem de fundo para cobrir toda a área do corpo */
+  background-size: cover;
+
+  /* Centraliza a imagem de fundo */
+  background-position: center;
+
+  /* Fixa a imagem de fundo para que não se mova com o scroll */
+  background-attachment: fixed;
+
+  background-color: #ccc;
+
+  /* Remove as margens padrão do corpo */
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+  padding: 1px;
+}
+
+.hero-content {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
+.main-tittle {
+  color: white;
+  text-transform: uppercase;
+  font-size: 56px;
+  margin-bottom: 0; /*tirando o espaço do subtittle*/
+  text-shadow: 2px 5px 5px rgb(0, 11, 1);
+}
+
+.main-subtittle {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  color: white;
+  padding: 16px;
+  display: inline-block;
+  border-bottom: 2px solid;
+}
+
+.list {
+  width: 90%;
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  list-style-type: none;
+  background-color: white;
+  padding: 16px;
+} 
+
+.list-item img { 
+    display: block; 
+  }
+
+.list-item__name {
+  background-color: black;
+  opacity: 0.8;
+  margin: 0;
+  color: white;
+  padding: 10px;
+} 
+
+.list-wrapper {
+  display: flex;
+  justify-content: center;
+}
