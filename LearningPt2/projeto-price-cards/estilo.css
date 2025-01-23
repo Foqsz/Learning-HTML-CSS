@@ -5,6 +5,13 @@ body {
   max-width: 960px; /* maximo de largura */
   margin: 0 auto; /* para centralizar*/
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /*para ocupar 100%*/
 }
 
 .main-tittle {
@@ -114,4 +121,11 @@ a.header__nav--active {
     background-color: transparent;
     transform: scale(1.1);
     color: white;
+}
+
+.copyright{
+    background-color: #cbe300;
+    color: black;
+    padding: 16px;
+    text-align: center; 
 }
