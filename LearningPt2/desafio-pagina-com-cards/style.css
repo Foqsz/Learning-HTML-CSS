@@ -54,8 +54,8 @@ body {
 }
 
 .list {
-  width: 90%;
-  max-width: 960px;
+  width: 74%; /* limitando o tamanho da lista */
+  max-width: 960px; /*limitando o tamanho do container*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
