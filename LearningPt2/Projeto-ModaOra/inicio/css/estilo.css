@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
 
+/* 
+html{
+    font-size: 62.5%; /* para 1em valer 10px /*
+    width: 100%;
+} */
+
+html {   
+    height: 100%; 
+    width: 100%;
+}
+
 .main-content {
     font-family: tahoma;
     max-width: 1354px;
@@ -89,7 +100,7 @@
     background-image: url(../imagens/bg_detalhe.png);   
     padding: 32px;
     color: white;
-    margin-top: 5em; 
+    margin-top: 5em;  
 }
 
 .details-title { 
@@ -103,17 +114,17 @@
     margin-top: 16px;
     margin-bottom: 32px;
     max-width: 500px;
-    text-align: left;  
+    text-align: left;   
 }
 
 .footer{
     background-color: #0b171f;
-    margin-top: 0;
+    margin-top: 0; 
 }
 
 .footer-text{
     color: #6f8597;
     margin-top: 0;
     padding: 16px;
-    text-align: center;
-}
+    text-align: center; 
+} 
