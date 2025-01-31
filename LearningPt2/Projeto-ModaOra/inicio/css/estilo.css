@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
+
+.main-content {
+    font-family: tahoma;
+    max-width: 1354px;
+    max-height: 2580px;
+    margin: 0 auto; /* Adicionado para centralizar horizontalmente */
+}
+
+.nav {
+    background-color: #162028;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+} 
+
+.nav-title {
+    font-family: pacifico;
+    font-size: 42px;
+    color: white;
+    margin-left: 32px;
+    margin-bottom: 0;
+    margin-top: 0;  
+}
+
+.nav-list {
+    color: #757272;
+    display: flex;
+    list-style-type: none;
+    gap: 24px;
+    letter-spacing: 4px;
+    margin-right: 16px;
+    text-transform: uppercase;
+    padding: 0; 
+} 
+
+.nav-list li{
+    border: 1px solid #757272;
+    padding: 16px;
+}
+
+.nav-list li:hover{
+    background-color: #adb8c2;
+    transition-duration: .5s; 
+}
+
+.nav-image {
+    width: 100%;
+    max-width: 100%; 
+} 
+
+.hero{  
+    margin-top: 5em;
+    justify-content: center;
+}
+
+.hero-title{
+    font-family: pacifico;
+    text-align: center;
+    font-size: 46px; 
+}
+
+.hero-description{ 
+    line-height: 2;
+    max-width: 800px;  
+    margin: 0 auto;
+    margin-bottom: 32px; 
+}
+
+.products { 
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;  
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.product-description {
+    text-align: center;
+    font-size: 14px;
+}
+
+.details {
+    background-image: url(../imagens/bg_detalhe.png);   
+    padding: 32px;
+    color: white;
+    margin-top: 5em; 
+}
+
+.details-title { 
+    max-width: 700px;
+    text-transform: uppercase;
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+
+.details-description {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    max-width: 500px;
+    text-align: left;  
+}
+
+.footer{
+    background-color: #0b171f;
+    margin-top: 0;
+}
+
+.footer-text{
+    color: #6f8597;
+    margin-top: 0;
+    padding: 16px;
+    text-align: center;
+}
