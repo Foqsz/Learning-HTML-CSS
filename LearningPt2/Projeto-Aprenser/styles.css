@@ -1,11 +1,10 @@
 .hero-Main{
-    width: 1440px;
-    height: 3273px;   
+    width: 1440px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero-Content{
-    background-color: #3b3838;
+    background-color: #3b3838; 
 }
 
 .content-nav__main{
@@ -17,7 +16,13 @@
 .content-ul__main{ 
     display: flex;  
     list-style: none;
-    gap: 10px;  
+    gap: 10px;   
+    color: #fff200;
+}
+
+.content-ul__main li{
+    border: 1px solid #fff200;
+    padding: 16px;
 }
 
 .logoMain{ 
@@ -75,5 +80,5 @@
     background-color: #3b3838;
     padding: 16px;
     text-align: center;
-    color: white;
+    color: white; 
 }
