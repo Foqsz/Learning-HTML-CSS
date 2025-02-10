@@ -1,0 +1,79 @@
+.hero-Main{
+    width: 1440px;
+    height: 3273px;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-Content{
+    background-color: #3b3838;
+}
+
+.content-nav__main{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.content-ul__main{ 
+    display: flex;  
+    list-style: none;
+    gap: 10px;  
+}
+
+.logoMain{ 
+    margin-left: 42px;
+}
+
+.hero-Second{
+    background-color: rgb(217, 237, 106);
+    display: flex;
+} 
+
+.hero-Second__mainDiv{
+    width: 35%;
+    height: 35%;
+}
+
+.hero-Second__mainDiv p{
+    font-size: 72px;  
+} 
+
+.saibaMais{
+    background-color: orange;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    padding: 16px;
+}
+
+.tittle-mainCursos{ 
+    text-align: center; 
+} 
+
+.hero-Cursos__MainDiv{
+    display: flex; 
+    width: 960px; 
+    gap: 10px;
+}
+
+.hero-main-Apresentacacao{
+    background-color: #022d54;
+    display: flex;
+    gap: 42px;
+}
+
+.hero-main__DivApre{
+    color: white;
+    width: 400px;  
+}
+
+.hero-main-Contact h5{
+    text-align: center; 
+}
+ 
+.hero-Footer{
+    background-color: #3b3838;
+    padding: 16px;
+    text-align: center;
+    color: white;
+}
