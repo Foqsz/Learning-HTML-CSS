@@ -7,90 +7,117 @@
   </head>
   <body>
     <header class="hero-Main">
-      <section class="hero-Content">
-        <nav class="content-nav__main">
-          <img class="logoMain" src="imagens/logoAprenser.png" alt="" />
-          <ul class="content-ul__main">
-            <li>Cursos</li>
-            <li>Nossa Escola</li>
-            <li>Contatos</li>
-          </ul>
-        </nav>
-      </section>
+      <div class="containerDark">
+        <section class="containerCenter hero-Content">
+          <nav class="content-nav__main">
+            <img class="logoMain" src="imagens/logoAprenser.png" alt="" />
+            <ul class="content-ul__main">
+              <li><a class="nav-link" href="#cursos">Cursos</a></li>
+              <li><a class="nav-link" href="#escola">Nossa Escola</a></li>
+              <li><a class="nav-link" href="#contatos">Contatos</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
 
-      <section class="hero-Second"> 
-        <div class="hero-Second__mainDiv">
-          <p>O saber é o que transforma nosso SER</p>
-          <a class="saibaMais" href="#">Saiba Mais</a>
-        </div>
-        <img
-        class="hero-second__mainImg"
-        src="imagens/HeroImage.png"
-        alt="hero"
-      />
-      </section>
+      <div class="wrapperContainer-hero">
+        <section class="containerCenter hero-Second">
+          <div class="hero-Second__mainDiv">
+            <p>O saber é o que transforma nosso SER</p>
+            <a class="saibaMais" href="#">Saiba Mais</a>
+          </div>
+          <img
+            class="hero-second__mainImg"
+            src="imagens/HeroImage.png"
+            alt="hero"
+          />
+        </section>
+      </div>
 
-      <section class="hero-Main-Cursos">
-        <h2 class="tittle-mainCursos">Principais Cursos</h2>
-        <div class="hero-Cursos__MainDiv">
-          <article class="hero-mainCursos-A1">
-            <img src="imagens/curso-design.png" alt="" />
-            <h3>Design para webG</h3>
+      <div class="wrapperContainer-light">
+        <section id="cursos" class="containerCenter hero-Main-Cursos">
+          <h2 class="tittle-mainCursos">Principais Cursos</h2>
+
+          <div class="hero-Cursos__MainDiv">
+            <article class="hero-mainCursos-A1">
+              <img src="imagens/curso-design.png" alt="" />
+              <h3>Design para webG</h3>
+              <p>
+                O curso Design para Web é perfeito para aqueles que desejam
+                aprender a criar designs atraentes e funcionais para sites e
+                aplicativos móveis.
+              </p>
+            </article>
+
+            <article class="hero-mainCursos-A2">
+              <img src="imagens/curso-design-1.png" alt="" />
+              <h3>Front End Developer</h3>
+              <p>
+                Aprenda HTML, CSS e Javascript e crei interfaces ricas e
+                semânticas para páginas web, aplicativos on-line ou até mesmo
+                aplicações para aparelhos celulares
+              </p>
+            </article>
+
+            <article class="hero-mainCursos-A3">
+              <img src="imagens/curso-design-2.png" alt="" />
+              <h3>Back End Developer</h3>
+              <p>
+                Com este curso você vai dominar uma linguagem back-end a sua
+                escolha, um sistema de banco de dados e aprenderá como funciona
+                o protocolo HTTP na prática.
+              </p>
+            </article>
+          </div>
+          <a href="#">Ver mais cursos</a>
+        </section>
+      </div>
+
+      <div class="wrapperContainer-dark2">
+        <section id="escola" class="hero-main-Apresentacacao">
+          <img src="imagens/nossa-escola.png" alt="nossaEscola" />
+          <div class="hero-main__DivApre">
+            <h2>Nossa escola</h2>
             <p>
-              O curso Design para Web é perfeito para aqueles que desejam
-              aprender a criar designs atraentes e funcionais para sites e
-              aplicativos móveis.
+              Aprenda habilidades tecnológicas em demanda e alcance seus
+              objetivos de carreira com a nossa escola de tecnologia online.
+              Oferecemos uma ampla gama de cursos online, desde programação e
+              desenvolvimento de software até design gráfico e análise de dados.
+              Nossos instrutores experientes fornecerão a você um ambiente de
+              aprendizado interativo e de suporte para ajudá-lo a adquirir as
+              habilidades necessárias para ter sucesso em sua carreira.
+              Inscreva-se agora e comece sua jornada para se tornar um
+              profissional de tecnologia bem-sucedido.
             </p>
-          </article>
-          <article class="hero-mainCursos-A2">
-            <img src="imagens/curso-design-1.png" alt="" />
-            <h3>Front End Developer</h3>
-            <p>
-              Aprenda HTML, CSS e Javascript e crei interfaces ricas e
-              semânticas para páginas web, aplicativos on-line ou até mesmo
-              aplicações para aparelhos celulares
-            </p>
-          </article>
-          <article class="hero-mainCursos-A3">
-            <img src="imagens/curso-design-2.png" alt="" />
-            <h3>Back End Developer</h3>
-            <p>
-              Com este curso você vai dominar uma linguagem back-end a sua
-              escolha, um sistema de banco de dados e aprenderá como funciona o
-              protocolo HTTP na prática.
-            </p>
-          </article>
+          </div>
+        </section>
+
+        <div id="contatos" class="wrapperContainer-light">
+          <section class="hero-main-Contact">
+            <h2>Contatos</h2> 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.113403465902!2d-34.97283533608385!3d-7.120454720210734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acef677dfb6bf3%3A0x856f4ddb33582ef8!2sMercadinho%20do%20Ari!5e1!3m2!1spt-BR!2sbr!4v1739198016534!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="525"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <address>
+              Av. da Liberdade, 1001<br />
+              Tel.: +351 21 123 456<br />
+              E-mail: contato@aprenser.com
+            </address>
+          </section>
         </div>
-      </section>
+      </div>
 
-      <section class="hero-main-Apresentacacao">
-        <img src="imagens/nossa-escola.png" alt="nossaEscola" />
-        <div class="hero-main__DivApre">
-          <h4>Nossa escola</h4>
-          <p>
-            Aprenda habilidades tecnológicas em demanda e alcance seus objetivos
-            de carreira com a nossa escola de tecnologia online. Oferecemos uma
-            ampla gama de cursos online, desde programação e desenvolvimento de
-            software até design gráfico e análise de dados. Nossos instrutores
-            experientes fornecerão a você um ambiente de aprendizado interativo
-            e de suporte para ajudá-lo a adquirir as habilidades necessárias
-            para ter sucesso em sua carreira. Inscreva-se agora e comece sua
-            jornada para se tornar um profissional de tecnologia bem-sucedido.
-          </p>
-        </div>
-      </section>
-
-      <section class="hero-main-Contact">
-        <h5>Contatos</h5>
-        <img src="imagens/map.png" alt="map" />
-        <p>Av. da Liberdade, 1001</p>
-        <p>Tel.: +351 21 123 456</p>
-        <p>E-mail: contato@aprenser.com</p>
-      </section>
-
-      <footer class="hero-Footer">
-        <p>Desenvolvido por Victor Vinicius</p>
-      </footer>
+      <div class="containerDark">
+        <footer class="hero-Footer">
+          <p>Desenvolvido por Victor Vinicius</p>
+        </footer>
+      </div>
     </header>
   </body>
 </html>
