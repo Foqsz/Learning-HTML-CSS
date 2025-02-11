@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <title>Projeto Aprenser</title>
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smooch+Sans:wght@100..900&display=swap");
+    </style>
   </head>
   <body>
     <header class="hero-Main">
-      <div class="containerDark">
+      <div class="wrapperContainerDark">
         <section class="containerCenter hero-Content">
           <nav class="content-nav__main">
             <img class="logoMain" src="imagens/logoAprenser.png" alt="" />
@@ -23,7 +27,7 @@
       <div class="wrapperContainer-hero">
         <section class="containerCenter hero-Second">
           <div class="hero-Second__mainDiv">
-            <p>O saber é o que transforma nosso SER</p>
+            <p>O saber é o que transforma nosso <span class="upper">ser</span></p>
             <a class="saibaMais" href="#">Saiba Mais</a>
           </div>
           <img
@@ -74,7 +78,7 @@
       </div>
 
       <div class="wrapperContainer-dark2">
-        <section id="escola" class="hero-main-Apresentacacao">
+        <section id="escola" class="containerCenter hero-main-Apresentacacao">
           <img src="imagens/nossa-escola.png" alt="nossaEscola" />
           <div class="hero-main__DivApre">
             <h2>Nossa escola</h2>
@@ -93,8 +97,8 @@
         </section>
 
         <div id="contatos" class="wrapperContainer-light">
-          <section class="hero-main-Contact">
-            <h2>Contatos</h2> 
+          <section class="containerCenter hero-main-Contact">
+            <h2>Contatos</h2>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.113403465902!2d-34.97283533608385!3d-7.120454720210734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acef677dfb6bf3%3A0x856f4ddb33582ef8!2sMercadinho%20do%20Ari!5e1!3m2!1spt-BR!2sbr!4v1739198016534!5m2!1spt-BR!2sbr"
               width="100%"
