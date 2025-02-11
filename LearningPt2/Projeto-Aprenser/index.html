@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="hero-Main">
-      <div class="wrapperContainerDark">
+      <div class="wrapperContainerDark wrapperContainer">
         <section class="containerCenter hero-Content">
           <nav class="content-nav__main">
             <img class="logoMain" src="imagens/logoAprenser.png" alt="" />
@@ -24,10 +24,13 @@
         </section>
       </div>
 
-      <div class="wrapperContainer-hero">
+      <div class="wrapperContainer-hero wrapperContainer">
         <section class="containerCenter hero-Second">
           <div class="hero-Second__mainDiv">
-            <p>O saber é o que transforma nosso <span class="upper">ser</span></p>
+            <h1 class="hero-tittle">
+              O saber é o que transforma <br />nosso
+              <span class="upper"><b>ser</b></span>
+            </h1>
             <a class="saibaMais" href="#">Saiba Mais</a>
           </div>
           <img
@@ -38,46 +41,52 @@
         </section>
       </div>
 
-      <div class="wrapperContainer-light">
+      <div class="wrapperContainer-light wrapperContainer">
         <section id="cursos" class="containerCenter hero-Main-Cursos">
           <h2 class="tittle-mainCursos">Principais Cursos</h2>
 
           <div class="hero-Cursos__MainDiv">
-            <article class="hero-mainCursos-A1">
+            <article class="hero-mainCursos-cards">
               <img src="imagens/curso-design.png" alt="" />
-              <h3>Design para webG</h3>
-              <p>
-                O curso Design para Web é perfeito para aqueles que desejam
-                aprender a criar designs atraentes e funcionais para sites e
-                aplicativos móveis.
-              </p>
+              <div class="cursos_card_content">
+                <h3>Design para webG</h3>
+                <p>
+                  O curso Design para Web é perfeito para aqueles que desejam
+                  aprender a criar designs atraentes e funcionais para sites e
+                  aplicativos móveis.
+                </p>
+              </div>
             </article>
 
-            <article class="hero-mainCursos-A2">
+            <article class="hero-mainCursos-cards">
               <img src="imagens/curso-design-1.png" alt="" />
-              <h3>Front End Developer</h3>
-              <p>
-                Aprenda HTML, CSS e Javascript e crei interfaces ricas e
-                semânticas para páginas web, aplicativos on-line ou até mesmo
-                aplicações para aparelhos celulares
-              </p>
+              <div class="cursos_card_content">
+                <h3>Front End Developer</h3>
+                <p>
+                  Aprenda HTML, CSS e Javascript e crei interfaces ricas e
+                  semânticas para páginas web, aplicativos on-line ou até mesmo
+                  aplicações para aparelhos celulares
+                </p>
+              </div>
             </article>
 
-            <article class="hero-mainCursos-A3">
+            <article class="hero-mainCursos-cards">
               <img src="imagens/curso-design-2.png" alt="" />
-              <h3>Back End Developer</h3>
-              <p>
-                Com este curso você vai dominar uma linguagem back-end a sua
-                escolha, um sistema de banco de dados e aprenderá como funciona
-                o protocolo HTTP na prática.
-              </p>
+              <div class="cursos_card_content">
+                <h3>Back End Developer</h3>
+                <p>
+                  Com este curso você vai dominar uma linguagem back-end a sua
+                  escolha, um sistema de banco de dados e aprenderá como
+                  funciona o protocolo HTTP na prática.
+                </p>
+              </div>
             </article>
           </div>
-          <a href="#">Ver mais cursos</a>
+          <a class="saibaMais section_Btn" href="#">Ver mais cursos</a>
         </section>
       </div>
 
-      <div class="wrapperContainer-dark2">
+      <div class="wrapperContainer-dark2 wrapperContainer">
         <section id="escola" class="containerCenter hero-main-Apresentacacao">
           <img src="imagens/nossa-escola.png" alt="nossaEscola" />
           <div class="hero-main__DivApre">
@@ -96,7 +105,7 @@
           </div>
         </section>
 
-        <div id="contatos" class="wrapperContainer-light">
+        <div id="contatos" class="wrapperContainer-light wrapperContainer">
           <section class="containerCenter hero-main-Contact">
             <h2>Contatos</h2>
             <iframe
