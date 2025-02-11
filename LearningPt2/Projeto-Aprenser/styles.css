@@ -1,84 +1,191 @@
-.hero-Main{
-    width: 1440px; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+:root {
+  --primary-color: #fed001;
 }
 
-.hero-Content{
-    background-color: #3b3838; 
+* {
+  font: 400 62.5% "Inter", serif;
 }
 
-.content-nav__main{
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
+p,
+a {
+  font-size: 1.6rem;
 }
 
-.content-ul__main{ 
-    display: flex;  
-    list-style: none;
-    gap: 10px;   
-    color: #fff200;
+h1 {
+  font-size: 4.8rem;
 }
 
-.content-ul__main li{
-    border: 1px solid #fff200;
-    padding: 16px;
+h2 {
+  font-size: 4rem;
 }
 
-.logoMain{ 
-    margin-left: 42px;
+h3 {
+  font-size: 3.2rem;
 }
 
-.hero-Second{
-    background-color: rgb(217, 237, 106);
-    display: flex;
-} 
-
-.hero-Second__mainDiv{
-    width: 35%;
-    height: 35%;
+nav a {
+  color: inherit;
 }
 
-.hero-Second__mainDiv p{
-    font-size: 72px;  
-} 
-
-.saibaMais{
-    background-color: orange;
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    padding: 16px;
+.wrapperContainer {
+  padding-top: 1px;
 }
 
-.tittle-mainCursos{ 
-    text-align: center; 
-} 
-
-.hero-Cursos__MainDiv{
-    display: flex; 
-    width: 960px; 
-    gap: 10px;
+.wrapperContainerDark {
+  background-color: #2a2a2a;
+  color: #fafafa;
 }
 
-.hero-main-Apresentacacao{
-    background-color: #022d54;
-    display: flex;
-    gap: 42px;
+.wrapperContainer-light {
+  background-color: #fafafa;
 }
 
-.hero-main__DivApre{
-    color: white;
-    width: 400px;  
+.wrapperContainer-dark2 {
+  background-color: #003464;
+  color: #fafafa;
 }
 
-.hero-main-Contact h5{
-    text-align: center; 
+.containerCenter {
+  max-width: 127.6rem;
+  margin: auto;
 }
- 
-.hero-Footer{
-    background-color: #3b3838;
-    padding: 16px;
-    text-align: center;
-    color: white; 
+/*------------------------------*/
+
+.content-nav__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.content-ul__main {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  color: #fff200;
+}
+
+.content-ul__main li {
+  border: 1px solid #fff200;
+  padding: 1rem;
+}
+
+.content-ul__main a {
+  text-decoration: none;
+}
+
+.content-nav__main li:hover {
+  background-color: black;
+}
+
+.wrapperContainer-hero {
+  background-image: linear-gradient(transparent, #f9f94f);
+}
+
+.hero-Second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20rem;
+}
+
+.upper {
+  text-transform: uppercase;
+  font-size: 4.9rem;
+}
+
+.saibaMais {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  font-size: 1.8rem;
+  text-decoration: none; 
+  padding: 1.6rem 4.6rem;
+  display: inline-block;
+  color: inherit;
+}
+
+.section_Btn{
+    margin: 3.5rem 0;
+}
+
+.hero-tittle {
+  margin-bottom: 4rem;
+}
+
+.tittle-mainCursos {
+  text-align: center;
+  padding: 7rem 0;
+  margin: 0;
+}
+
+.hero-Cursos__MainDiv {
+  display: flex;
+  text-align: left;
+  gap: 2rem;
+}
+
+.hero-mainCursos-cards {
+  /* border: 1px solid #ccc; 
+    border-radius: 1rem; 
+    overflow: hidden; */
+  flex: 1;
+}
+
+.hero-mainCursos-cards:hover { 
+    background-color: #ccc;
+}
+
+.hero-mainCursos-cards h3 {
+  font-size: 2.4rem;
+}
+
+.hero-mainCursos-cards img {
+  display: block;
+  width: 100%;
+}
+
+.hero-mainCursos-cards p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.cursos_card_content {
+  padding: 1rem 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 0 0 8px 8px;
+  border-top: transparent;
+}
+
+.hero-Main-Cursos {
+  text-align: center;
+}
+
+.hero-main-Apresentacacao { 
+  display: flex;
+  gap: 6rem;
+  padding-top: 6rem;
+}
+
+.hero-main__DivApre { 
+  line-height: 1.5;
+}
+
+.hero-main-Contact h2 {
+  text-align: center; 
+  color: #000000;
+}
+
+.hero-main-Contact address{
+    text-align: right;
+    color: #000000;
+    font-size: 2rem;  
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-Footer {
+  background-color: #3b3838;
+  padding: 16px;
+  text-align: center;
+  color: white;
 }
