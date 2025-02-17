@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabelas</title>
+
+    <style>
+      body { 
+        font-family: Tahoma; 
+      }
+
+      td{
+        border: 2px solid #000000;
+        text-align: center;
+        padding: 10px;
+      }
+
+      th{
+        background-color: #fa6565;
+        border: 2px solid #000000;
+        padding: 16px;
+      }
+
+      table{
+        width: 80%;
+        margin: auto;
+        background-color: #bd4f4f;
+        border-collapse: collapse;
+      }
+
+      .curso1{
+        background-color: #d41919;
+      }
+
+      .curso2{
+        background-color: #740909;
+      }
+    </style>
+  </head>
+  <body> 
+    <table>
+      <caption>Tabela de Preços</caption>
+
+      <thead>
+        <tr>
+          <th>Área</th>
+          <th>Curso</th>
+          <th>Investimento</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="curso1">
+          <td rowspan="3">Design</td>
+          <td>InDesign</td>
+          <td>R$1.000,00</td>
+        </tr>
+
+        <tr class="curso1"> 
+          <td>Photoshop</td>
+          <td>R$1.000,00</td>
+        </tr>
+
+        <tr class="curso1"> 
+          <td>Illustrator</td>
+          <td>R$1.000,00</td>
+        </tr>
+
+        <tr class="curso2">
+          <td rowspan="4">Development</td>
+          <td>HTML</td>
+          <td>R$1.000,00</td>
+        </tr>
+
+        <tr class="curso2"> 
+          <td>CSS</td>
+          <td>R$1.000,00</td>
+        </tr>
+
+        <tr class="curso2"> 
+          <td>Javascript</td>
+          <td>R$1.000,00</td>
+        </tr>
+
+        <tr class="curso2"> 
+          <td>C#</td>
+          <td>R$1.000,00</td>
+        </tr>
+      </tbody>
+
+      <tfoot> 
+        <tr>
+          <td colspan="3">Valores sujeitos a alterações.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
