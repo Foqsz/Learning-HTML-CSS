@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Desafio popver</title>
+
+    <style>
+      body {
+        font-family: Fira Code;
+      }
+      .main-Container {
+        background-color: bisque;
+        padding: 16px;
+        border-radius: 16px;
+        margin: auto;
+        max-width: 30%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.508);  
+      }
+
+      .div-Header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .help-button {
+        background-color: rgb(242, 173, 90);
+        border-radius: 5px;
+        color: black;
+        padding: 8px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .help-button:hover {
+        background-color: #f99d1e; 
+      }
+
+      .popover-content {
+        background-color: #f99d1e;
+        padding: 16px;
+        border-radius: 10px;
+        border: none;
+      }
+
+      ::backdrop {
+        background-color: rgba(0, 0, 0, 0.72);
+      }
+
+      .main-Container :popover-open {
+        inset: unset;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-Container">
+      <div class="div-Header">
+        <h1>Perfil de Victor Vinicius</h1>
+        <button popovertarget="help-button" class="help-button"><b>Ajuda</b></button>
+
+        <div id="help-button" class="popover-content" popover="auto">
+          Nome completo do usuário. Pode ser alterado nas configurações de
+          perfil.
+        </div>
+      </div>
+
+      <p><b>Nome:</b> Victor Vinicius</p>
+      <hr />
+      <div class="infos">
+        <h1>Informações de Contato</h1>
+      </div>
+      <p><b>Email: </b>victor@gmail.com</p>
+    </div> 
+  </body>
+</html>
