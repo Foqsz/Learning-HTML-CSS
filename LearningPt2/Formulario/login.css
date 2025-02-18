@@ -1,5 +1,5 @@
 html{
-    background-color: #95a5a6;
+    background-color: #e0e5e5;
     font-family: Cascadia Mono; 
 }
 
@@ -14,7 +14,7 @@ body{
 
 form{
     width: 21em; 
-    background-color: #fffdfd;
+    background-color: #e0dada;
     border-radius: .313em;
     box-shadow: 3px 3px 10px #2b2a2a;
     padding: 1em;
@@ -36,8 +36,23 @@ label{
 .login{
     width: fit-content; /*largura usada apenas pelo conteudo (texto)*/
     cursor: pointer;
-    margin-left: auto;
+    margin-left: auto; /*deixando o botao na direita*/
     background-color: #c6e6dc;
+}
+
+.actions{
+    display: flex;
+    gap: 1em;
+}
+
+.btn{
+    cursor: pointer;
+    margin-left: auto; /*deixando o botao na direita*/
+    background-color: #17efaa;
+}
+
+.btn--apagar{
+    background-color: #d73434;
 }
 
 .login:hover{

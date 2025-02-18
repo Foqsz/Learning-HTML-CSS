@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Login</title>
-    
-    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
     <h1>Login</h1>
@@ -13,12 +13,15 @@
         <legend>Insert user informations</legend>
 
         <label for="User">Username</label>
-        <input type="text" id="User" required autofocus/>
+        <input type="text" id="User" required autofocus />
 
         <label for="Pass">Password</label>
         <input type="password" id="Pass" required />
 
-        <input class="login" type="submit" value="Login" />
+        <div class="actions">
+          <input type="reset" value="Reset" class="btn btn--apagar" />
+          <input type="submit" value="Login" class="btn" />
+        </div>
       </fieldset>
     </form>
   </body>
