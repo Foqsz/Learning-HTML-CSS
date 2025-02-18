@@ -3,18 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <title>Login</title>
-
-    <style>
-        body{
-            font-family: Cascadia Mono;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="login.css">
   </head>
   <body>
     <h1>Login</h1>
     <form action="#" method="post">
       <fieldset>
-        <legend>Login</legend>
+        <legend>Insert user informations</legend>
 
         <label for="User">Username</label>
         <input type="text" id="User" required autofocus/>
@@ -22,7 +18,7 @@
         <label for="Pass">Password</label>
         <input type="password" id="Pass" required />
 
-        <input type="submit" value="Login" />
+        <input class="login" type="submit" value="Login" />
       </fieldset>
     </form>
   </body>

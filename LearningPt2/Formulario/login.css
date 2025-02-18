@@ -1,0 +1,64 @@
+html{
+    background-color: #95a5a6;
+    font-family: Cascadia Mono; 
+}
+
+body{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    width: 21em; 
+    background-color: #fffdfd;
+    border-radius: .313em;
+    box-shadow: 3px 3px 10px #2b2a2a;
+    padding: 1em;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}  
+
+input, 
+label{
+    display: block; /* para descer os blocos */
+    width: 100%;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.login{
+    cursor: pointer;
+}
+
+.login:hover{
+    background-color: #b9b4b4;
+}
+
+label{
+    margin-bottom: .25em;
+}
+
+input{
+    padding: .75em;
+    border-radius: .313em;
+    margin-bottom: 1.5em;
+    border: 1px solid #bbb;
+    font-size: 1em;
+}
+
+legend{
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: #454e4f;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
