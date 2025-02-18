@@ -30,12 +30,14 @@ input,
 label{
     display: block; /* para descer os blocos */
     width: 100%;
-    box-sizing: border-box; 
-    text-align: center;
+    box-sizing: border-box;  
 }
 
 .login{
+    width: fit-content; /*largura usada apenas pelo conteudo (texto)*/
     cursor: pointer;
+    margin-left: auto;
+    background-color: #c6e6dc;
 }
 
 .login:hover{
