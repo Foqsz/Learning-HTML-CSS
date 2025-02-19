@@ -6,7 +6,10 @@
 
     <style>
       body{
-        padding-bottom: 100vh;
+        padding-bottom: 100vh; 
+      }
+      textarea{
+        resize: none; 
       }
     </style>
   </head>
@@ -16,7 +19,7 @@
         <legend>Introdução</legend>
 
         <label for="">Email</label>
-        <input type="email" name="email" />
+        <input type="email" name="email" placeholder="email@com"/>
         <br />
         <br />
         <label for="">Idade</label>
@@ -74,9 +77,54 @@
           </datalist>
         </label>
       </fieldset>
+
+      <fieldset>
+        <legend>Mensagem</legend>
+        <textarea name="Mensagem" cols="30" rows="8" maxlength="20" placeholder="digite sua mensagem aqui"></textarea>
+        <br>
+        <textarea cols="150" rows="22" disabled>
+          CONTRATO DE PRESTAÇÃO DE SERVIÇOS
+          
+          Pelo presente instrumento particular, as partes abaixo qualificadas têm entre si, justo e acordado, o seguinte:
+          
+          1. OBJETO DO CONTRATO
+             1.1 O Contratado se compromete a prestar serviços de [descrição do serviço] ao Contratante.
+          
+          2. OBRIGAÇÕES DAS PARTES
+             2.1 O Contratante deverá fornecer as informações necessárias para a execução do serviço.
+             2.2 O Contratado deverá realizar o serviço conforme os padrões acordados.
+          
+          3. PAGAMENTO
+             3.1 O valor acordado para o serviço será de R$ [valor] a ser pago em [forma de pagamento].
+          
+          4. VIGÊNCIA
+             4.1 O presente contrato terá início em [data] e término em [data].
+          
+          E, por estarem de comum acordo, assinam o presente instrumento.
+          
+          [Nome do Contratante] - Contratante
+          [Nome do Contratado] - Contratado
+          </textarea>  
+        <label>
+          <br>
+          <input type="checkbox" checked> Li e aceito o contrato
+        </label>
+        <br>
+        <input type="file">
+      </fieldset>
+      <input type="button" value="ok">
       <br />
       <br />
       <input type="submit" value="Ok" />
+      <button type="submit"><b>tag button</b></button>
+
+      <input type="search" name="" id="">
+      <br>
+      <input type="range" min="0" max="10" step="2">
+      <br>
+      <input type="time">
+      <br>
+      <input type="color" name="colorPicker" id="colorPicker">
     </form>
   </body>
 </html>
