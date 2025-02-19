@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Formulário</title>
+
+    <style>
+      body{
+        padding-bottom: 100vh;
+      }
+    </style>
   </head>
   <body>
     <form>
@@ -10,7 +16,7 @@
         <legend>Introdução</legend>
 
         <label for="">Email</label>
-        <input type="email" name="email" required />
+        <input type="email" name="email" />
         <br />
         <br />
         <label for="">Idade</label>
@@ -39,6 +45,34 @@
         <label> <input type="checkbox" name="interesse" value="Csharp"/>C# </label>
         <label> <input type="checkbox" name="interesse" value="Javascript"/>Javascript </label>
         <label> <input type="checkbox" name="interesse" value="PHP"/>PHP </label>
+
+        <br>
+
+        <label>Escolha uma linguagem
+          <br>
+          <select name="linguagem" required multiple size="8">
+            <option value="">Selecione</option>
+            <optgroup label="frontend"> 
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="Javascript">Javascript</option>
+            </optgroup> 
+
+            <optgroup label="backend">
+              <option value="Csharp">C#</option> 
+              <option value="PHP">PHP</option>
+            </optgroup> 
+          </select>
+
+          <input type="text" list="linguagemList">
+          <datalist id="linguagemList">
+            <option value="HTML"> 
+            <option value="CSS"> 
+            <option value="Csharp"> 
+            <option value="Javascript"> 
+            <option value="PHP"> 
+          </datalist>
+        </label>
       </fieldset>
       <br />
       <br />
