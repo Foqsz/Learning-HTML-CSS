@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Introdução</legend>
+
+        <label for="">Email</label>
+        <input type="email" name="email" required />
+        <br />
+        <br />
+        <label for="">Idade</label>
+        <input type="number" id="idade" min="0" max="10" />
+        <br />
+        <br />
+        <input type="date" min="2025-02-19" max="2025-06-21" />
+        <br />
+        <br />
+        Você está trabalhando?
+        <label>
+          <input type="radio" name="question" />
+          Sim
+        </label>
+        <label>
+          <input type="radio" name="question" />
+          Não
+        </label>
+        <br />
+        <br />
+        <input type="submit" value="ok" />
+      </fieldset>
+    </form>
+  </body>
+</html>
