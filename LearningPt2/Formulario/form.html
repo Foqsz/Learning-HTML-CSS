@@ -22,17 +22,27 @@
         <br />
         Você está trabalhando?
         <label>
-          <input type="radio" name="question" />
+          <input type="radio" name="question" name="questionExtra" value="yes"/>
           Sim
         </label>
         <label>
-          <input type="radio" name="question" />
+          <input type="radio" name="question" name="questionExtra" value="not"/>
           Não
         </label>
-        <br />
-        <br />
-        <input type="submit" value="ok" />
       </fieldset>
+
+      <fieldset>
+        <legend>Área de Interesse</legend>
+
+        <label> <input type="checkbox" name="interesse" value="html"/>HTML </label>
+        <label> <input type="checkbox" name="interesse" value="CSS"/>CSS </label>
+        <label> <input type="checkbox" name="interesse" value="Csharp"/>C# </label>
+        <label> <input type="checkbox" name="interesse" value="Javascript"/>Javascript </label>
+        <label> <input type="checkbox" name="interesse" value="PHP"/>PHP </label>
+      </fieldset>
+      <br />
+      <br />
+      <input type="submit" value="Ok" />
     </form>
   </body>
 </html>
