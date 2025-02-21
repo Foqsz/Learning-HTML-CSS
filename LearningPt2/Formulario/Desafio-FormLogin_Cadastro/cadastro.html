@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastramento</title>
+</head>
+<body>
+    <img src="newUser.png" alt="NovoUsuario" class="img-newUser">
+    <form action="" class="main-Container">
+        <fieldset class="hero-Content">
+            <legend class="tittle-Content">Cadastramento</legend>
+
+            <label for="" class="label-Content">Usuário</label>
+            <input type="text" class="input-Content" required minlength="5" placeholder="Digite seu usuário">
+
+            <label for="" class="label-Content">Email</label>
+            <input type="email" class="input-Content" required placeholder="email@example.com">
+
+            <label for="" class="label-Content">Senha</label>
+            <input type="password" class="input-Content" required minlength="5" placeholder="Digite sua senha">
+
+            <p class="userAtivo">Concorda com os nossos <a href="#" class="userAtivo">Termos de contrato?</a></p>
+            <input type="radio" name="checkNewUser" id="check" class="inputRadio"> Sim
+            <input type="radio" name="checkNewUser" id="check" class="inputRadio"> Não
+
+            <button type="submit" class="btn-Login"><b>Registre-se</b></button>
+            <p class="userAtivo">Já possui cadastro? <a href="index.html" class="userAtivo">Faça login</a></p>
+        </fieldset>
+    </form>
+</body>
+</html>
