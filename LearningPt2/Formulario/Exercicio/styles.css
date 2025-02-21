@@ -43,6 +43,23 @@ input,textarea{
     margin: .5em 0 2.5em;
     color: white;
     resize: none;
+    outline: 0;
+} 
+
+/* input:invalid, textarea:invalid{
+    border-bottom-color: red;
+} */
+
+input:valid, textarea:valid{
+    border-bottom-color: green;
+}
+
+input:invalid:focus, textarea:invalid:focus{
+    border-bottom-color: red;
+}
+
+input:focus, textarea:focus{
+    border-bottom-color: white;
 } 
 
 legend{
