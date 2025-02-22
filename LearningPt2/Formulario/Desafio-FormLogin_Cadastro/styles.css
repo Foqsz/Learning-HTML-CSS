@@ -1,5 +1,9 @@
+:root {
+    --primary-color: #c40a0a;
+  }
+
 html{
-    background-color: #670808;
+    background-image: linear-gradient(transparent, #a81010);
     font-family: "Cascadia Mono";
     color: white;
     font-weight: bold; 
@@ -29,7 +33,7 @@ body{
     max-width: 30em;
     background-color: rgba(33, 7, 7, 0.832); 
     padding: 1em; 
-    box-shadow: -10px 0px 0px rgba(0, 0, 0, 0.662);
+    box-shadow: -10px 0px 0px rgba(123, 43, 43, 0.662);
 } 
 
 .hero-Content{
@@ -50,7 +54,7 @@ body{
 .btn-Login{
     text-transform: uppercase;
     color: white;
-    background-color: #670808;
+    background-color: var(--primary-color);
     border: none;
     cursor: pointer;
     padding: 12px;
@@ -63,7 +67,7 @@ body{
     text-transform: uppercase;
     color: white;
     cursor: pointer;
-    color: #670808;
+    color: var(--primary-color);
 } 
 
 .btn-newPassword,
@@ -103,7 +107,7 @@ body{
 
 .tittle-Content{
     font-size: 2em;
-    color: #670808; 
+    color: var(--primary-color); 
     letter-spacing: 3px;
     text-transform: uppercase;
 } 
