@@ -15,7 +15,7 @@ body{
     align-items: center;
     flex-wrap: wrap; /*otimizar para telas menores*/
     min-height: 100vh; 
-    padding: 20px; /* Adiciona um espaçamento nas laterais */
+    padding: 20px; /* Adiciona um espaçamento nas laterais */ 
 }  
 
 /* para a imagem se alinhar conforme a tela reduz*/
