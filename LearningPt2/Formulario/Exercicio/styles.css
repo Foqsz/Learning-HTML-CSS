@@ -11,6 +11,7 @@ body{
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    flex-wrap: wrap;
 }  
 
 form{
@@ -20,6 +21,13 @@ form{
     background-color: #0e1010; 
     padding: 1em;
 }  
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+    max-width: 500px; 
+} 
 
 fieldset{
     border: none; 
