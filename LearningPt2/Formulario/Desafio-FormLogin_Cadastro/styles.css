@@ -4,7 +4,7 @@
 
 html{
     background-image: linear-gradient(transparent, #a81010);
-    font-family: "Cascadia Mono";
+    font-family: 'Roboto';
     color: white;
     font-weight: bold; 
 }
@@ -58,23 +58,24 @@ img {
     text-align: left;
 }
 
-.btn-Login{
+.btn-Login,
+.btn-newUser{
     text-transform: uppercase;
     color: white;
     background-color: var(--primary-color);
     border: none;
     cursor: pointer;
-    padding: 12px;
-    border-radius: 7px;   
-    display: flex;
+    padding: 10px .5em;
+    border-radius: 5px;   
+    text-decoration: none;
+    letter-spacing: .2px;
+    font-size: 1em;
 }
 
-.btn-newUser{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    cursor: pointer;
-    color: var(--primary-color);
+.btn-Login:hover,
+.btn-newUser:hover,
+.btn-newPassword:hover {
+    color: black;
 } 
 
 .btn-newPassword,
@@ -82,7 +83,8 @@ img {
 .btn-newUser{
     margin-top: 20px;
     margin-bottom: 10px;
-}
+    font-weight: bold;
+} 
 
 .btn-newPassword,
 .userAtivo{
@@ -123,6 +125,8 @@ img {
 .buttons{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: center;
 }
 
 .input-Content:valid{
