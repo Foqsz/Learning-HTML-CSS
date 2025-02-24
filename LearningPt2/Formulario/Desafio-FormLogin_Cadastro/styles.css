@@ -120,6 +120,11 @@ img {
     text-transform: uppercase;
 } 
 
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
 .input-Content:valid{
     border-bottom-color: green;
 }
