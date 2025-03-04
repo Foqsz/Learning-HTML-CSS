@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Seletores Atributos</title>
+
+    <style>
+        a[href="#"]:not(.link-ok) {
+            color: red;
+            opacity: .2;
+        }
+        
+        a[href^="http"] {
+            color: green;
+        }
+
+        a[href$=".pdf"] {
+            color: #ffc800;
+        }
+
+        a[target="_blank"] {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#" class="link-ok">Link Falso</a></li>
+        <li><a href="https://github.com/Foqsz" target="_blank">Link externo</a></li>
+        <li><a href="pasta/pdf.pdf">Link para um Pdf</a></li>
+        <li><a href="seletores_compostos.html">Link interno</a></li>
+    </ul>
+</body>
+</html>
