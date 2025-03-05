@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>After e Before</title>
+
+    <style>
+      p::before {
+        content: "Texto Antes ";
+        color: red;
+      }
+
+        p::after {
+            content: " Texto Depois";
+            color: blue;
+        }
+
+        div{
+            border: 3px solid red;
+            padding: 1em;
+            position: relative;
+        }
+
+        p{
+            margin: 0;
+        }
+
+        div::before{
+            content: "";
+            width: 1em; 
+            height: 1em;
+            background-color: red;
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, minima.
+        Temporibus neque quibusdam repellat dolorum? Nam, explicabo atque.
+        Accusantium, distinctio? Architecto reprehenderit, sint dignissimos
+        saepe molestias vitae, dicta ut quo dolorem, suscipit eius commodi
+        temporibus velit! Accusamus tempore, architecto, sunt unde, ipsum
+        quibusdam veritatis aliquid adipisci quisquam numquam doloremque animi.
+      </p>
+    </div>
+  </body>
+</html>
