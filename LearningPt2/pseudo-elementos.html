@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pseudo Elementos</title>
+
+    <style>
+        body{
+            font-family: Cascadia Code;
+        }
+        p::first-letter{
+            font-size: 4em;
+            float: left;
+            margin-right: .2em;
+            line-height: 1;
+        }
+
+        p::first-line{
+            color: brown;
+        }
+
+        ::selection{
+            background-color: orange;
+        }
+ 
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laboriosam
+      sit. Veniam non modi sit eveniet molestiae eius, in architecto totam
+      nulla, ad voluptates adipisci officia repudiandae quibusdam nemo tempore?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laboriosam
+      sit. Veniam non modi sit eveniet molestiae eius, in architecto totam
+      nulla, ad voluptates adipisci officia repudiandae quibusdam nemo tempore?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laboriosam
+      sit. Veniam non modi sit eveniet molestiae eius, in architecto totam
+      nulla, ad voluptates adipisci officia repudiandae quibusdam nemo tempore?
+    </p>
+  </body>
+</html>
