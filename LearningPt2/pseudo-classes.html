@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+
+    <title>Pseudo Classes</title>
+
+    <style>
+        button{
+            background-color: #626060;
+            color: white;
+            border: none;
+            padding: 1em;
+            margin-bottom: .5em;
+        }
+
+        button:disabled{
+            opacity: .5;
+        }
+
+        p:empty::before{
+            content: "Texto vazio";
+        }
+
+        a:hover,
+        a:focus{
+            background-color: yellow;
+        }
+
+        input[type="text"]:read-write{
+            background-color: #585855;
+            border: none;
+            padding: .5em;
+        }   
+
+        input[type="text"]:disabled{
+            background-color: #ffffff;
+            border: none;
+            padding: .5em;
+        }   
+
+        input[type="text"]:read-only:not(:disabled){
+            background-color: #ffff00;
+            border: none;
+            padding: .5em;
+        }   
+
+        input[type="text"]::placeholder{ 
+            color: white;
+            border: none;
+            padding: .5em;
+        }   
+        input[type="text"]::placeholder{ 
+            color: white;
+            border: none;
+            padding: .5em;
+        }   
+        input[type="text"]:placeholder-shown{ 
+            background-color: aqua;
+            border: none;
+            padding: .5em;
+        }   
+
+
+    </style>
+</head>
+<body>
+    
+</body>
+    <button>Vai</button>
+    <button disabled>Vai disabled</button>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, labore.</p>
+    <p> </p>
+    <p></p>
+
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+    </ul>
+
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+
+    <form action="#">
+        <input type="text" value="valor inicial"><br> <br>
+        <input type="text" value="valor" disabled><br> <br>
+        <input type="text" value="oi" readonly><br> <br>
+        <input type="text" placeholder="placeholder"><br> <br>
+    </form>
+</html>
