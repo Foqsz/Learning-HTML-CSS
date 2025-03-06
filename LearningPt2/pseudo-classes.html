@@ -61,21 +61,30 @@
             padding: .5em;
         }   
 
+        p:only-child{
+            background-color: orange;
+        }
 
+        p:read-write{
+            border-bottom: 2px solid red;
+        }
+
+        div:target{
+            border: 4px dashed red;
+        }
     </style>
 </head>
 <body>
-    
-</body>
-    <button>Vai</button>
-    <button disabled>Vai disabled</button>
-
+    <div id="top">
+        <button>Vai</button>
+        <button disabled>Vai disabled</button>
+    </div> 
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, labore.</p>
     <p> </p>
     <p></p>
 
     <ul>
-        <li><a href="#">link falso</a></li>
+        <li><a href="#titulo">vai para o titulo</a></li>
         <li><a href="#">link falso</a></li>
         <li><a href="#">link falso</a></li>
         <li><a href="#">link falso</a></li>
@@ -93,4 +102,19 @@
         <input type="text" value="oi" readonly><br> <br>
         <input type="text" placeholder="placeholder"><br> <br>
     </form>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p contenteditable>Paragráfo editavel</p>
+    </div>
+
+    <h1 id="titulo">Titulo</h1>
+
+    <a href="#top">subir</a>
+</body> 
 </html>
