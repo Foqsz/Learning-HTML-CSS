@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pseudo Elementos</title>
+
+    <style>
+      body {
+        font-family: Cascadia Code;
+      }
+
+      p a {
+        color: red;
+        background-color: brown;
+      }
+
+      /*
+      Qualquer elemento <p> que contenha um elemento filho com a classe "teste". A pseudo-classe :has() é usada para selecionar os elementos <p> que atendem a essa condição.
+      */
+      p:has(.teste) {
+        background-color: #ccc;
+      }
+
+      ::selection {
+        background-color: palegoldenrod;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 24px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid #ddd;
+        padding: 0.5em;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        text-align: left;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tr:nth-child(odd) {
+        background-color: white;
+      }
+
+      tr:has(td:first-child input[type="checkbox"]:checked) {
+        background-color: #aaffaa;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laboriosam
+      sit. Veniam non modi sit eveniet molestiae eius, in architecto totam
+      nulla, ad voluptates <a href="#"> clique aqui para saber mais</a> adipisci
+      officia repudiandae quibusdam nemo tempore?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laboriosam
+      sit. Veniam non modi sit eveniet molestiae eius, in architecto totam
+      nulla, ad voluptates
+      <a href="#" class="teste"> clique aqui para saber mais</a>adipisci officia
+      repudiandae quibusdam nemo tempore?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laboriosam
+      sit. Veniam non modi sit eveniet molestiae eius, in architecto totam
+      nulla, ad voluptates adipisci officia repudiandae quibusdam nemo tempore?
+    </p>
+    <hr />
+    <table class="desafio">
+      <tr>
+        <th></th>
+        <th>Nome</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="teste" id="teste" /></td>
+        <td>John Doe</td>
+        <td>jd@gmail.com</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="teste" id="teste" /></td>
+        <td>PH Alves</td>
+        <td>PH@gmail.com</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="teste" id="teste" /></td>
+        <td>VV Alves</td>
+        <td>VV@gmail.com</td>
+      </tr>
+    </table>
+  </body>
+</html>
