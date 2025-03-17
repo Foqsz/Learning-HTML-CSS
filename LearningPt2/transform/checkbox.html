@@ -46,7 +46,7 @@
         outline: none;
       }
 
-      .lbl2 input[type="checkbox"]:focus+span{
+      .lbl2 input[type="checkbox"]:focus + span {
         outline: 2px solid black;
         box-sizing: border-box;
       }
@@ -58,7 +58,7 @@
         height: 1em;
         background-color: red;
         position: relative;
-        transition: background-color .4s;
+        transition: background-color 0.4s;
       }
 
       .lbl2 input[type="checkbox"]:checked + span {
@@ -78,11 +78,68 @@
         border-left-color: transparent;
         border-top-color: transparent;
         opacity: 0;
-        transition: opacity .5s;
+        transition: opacity 0.5s;
       }
 
-      .lbl2 input[type="checkbox"]:checked+span::before{
+      .lbl2 input[type="checkbox"]:checked + span::before {
         opacity: 1;
+      }
+
+      .switch{
+        --time: .2s;
+      }
+
+      .switch span {
+        display: inline-block;
+        width: 2em;
+        height: 1em;
+        border-radius: 1em;
+        outline: 2px solid #ccc;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .switch span::after {
+        content: "";
+        display: block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: red;
+        transition: transform var(--time) ease-in-out;
+        transform: translateX(0);
+        position: relative;
+        z-index: 1;
+      }
+
+      .switch input:checked + span::after {
+        transform: translateX(100%);
+      }
+
+      .switch span::before{
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: #ccc;
+        transform: translateX(-100%);
+        transition: transform var(--time) ease-in-out;
+        position: absolute;
+        z-index: 0;
+      }
+
+      .switch input:checked + span::before {
+        transform: translateX(0);
+      }
+
+      .switch input[type="checkbox"] {
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        position: absolute;
+        outline: none;
       }
     </style>
   </head>
@@ -122,6 +179,26 @@
     </label>
 
     <label class="lbl2">
+      <input type="checkbox" />
+      <span></span>
+      C#
+    </label>
+
+    <hr />
+
+    <label class="switch">
+      <input type="checkbox" checked />
+      <span></span>
+      HTML
+    </label>
+
+    <label class="switch">
+      <input type="checkbox" />
+      <span></span>
+      CSS
+    </label>
+
+    <label class="switch">
       <input type="checkbox" />
       <span></span>
       C#
