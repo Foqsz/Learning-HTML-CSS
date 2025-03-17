@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkbox</title>
+
+    <style>
+      .chk1 {
+        display: none;
+      }
+
+      .chk1 + label span {
+        display: inline-block;
+        font-size: 26px;
+        width: 1em;
+        height: 1em;
+        background-color: red;
+      }
+
+      .chk1:checked + label span {
+        background-color: blue;
+        position: relative;
+      }
+
+      .chk1:checked + label span::before {
+        content: ""; /* sempre que tiver before, tem que ter content */
+        display: block;
+        border: 0.077em solid white;
+        position: absolute;
+        top: 0.077em;
+        left: 0.38em;
+        right: 0.3em;
+        bottom: 0.3em;
+        transform: rotate(30deg);
+        border-left-color: transparent;
+        border-top-color: transparent;
+      }
+
+      .lbl2 input[type="checkbox"] {
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        position: absolute;
+        outline: none;
+      }
+
+      .lbl2 input[type="checkbox"]:focus+span{
+        outline: 2px solid black;
+        box-sizing: border-box;
+      }
+
+      .lbl2 span {
+        display: inline-block;
+        font-size: 26px;
+        width: 1em;
+        height: 1em;
+        background-color: red;
+        position: relative;
+        transition: background-color .4s;
+      }
+
+      .lbl2 input[type="checkbox"]:checked + span {
+        background-color: blue;
+      }
+
+      .lbl2 input[type="checkbox"] + span::before {
+        content: "";
+        display: block;
+        border: 0.077em solid #ffffff;
+        position: absolute;
+        top: 0.077em;
+        left: 0.38em;
+        right: 0.3em;
+        bottom: 0.3em;
+        transform: rotate(30deg);
+        border-left-color: transparent;
+        border-top-color: transparent;
+        opacity: 0;
+        transition: opacity .5s;
+      }
+
+      .lbl2 input[type="checkbox"]:checked+span::before{
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Checkbox</h1>
+
+    <input type="checkbox" id="html" class="chk1" checked />
+    <label for="html">
+      <span></span>
+      HTML
+    </label>
+
+    <input type="checkbox" id="css" class="chk1" />
+    <label for="css">
+      <span></span>
+      CSS
+    </label>
+
+    <input type="checkbox" id="c#" class="chk1" />
+    <label for="c#">
+      <span></span>
+      C#
+    </label>
+
+    <hr />
+
+    <label class="lbl2">
+      <input type="checkbox" checked />
+      <span></span>
+      HTML
+    </label>
+
+    <label class="lbl2">
+      <input type="checkbox" />
+      <span></span>
+      CSS
+    </label>
+
+    <label class="lbl2">
+      <input type="checkbox" />
+      <span></span>
+      C#
+    </label>
+  </body>
+</html>
