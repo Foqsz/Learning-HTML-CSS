@@ -5,13 +5,15 @@
     <title>Transform</title>
 
     <style>
-        body{
+        body {
             margin-bottom: 100vh;
-        }
+            display: flex;
+            flex-wrap: wrap; 
+        } 
 
         div{
             outline: 1px solid #888;
-            width: 200px;
+            width: 300px;
             margin: .5em auto;
         }
 
@@ -30,6 +32,18 @@
         .div2 .destaque{
             position: relative;
             left: 25%
+        }
+
+        .div3 .destaque{
+            transform: rotate(45deg);
+        }
+
+        .div4 .destaque{
+            transform: scale(.5);
+        }
+
+        .div5 .destaque{
+            transform: skewY(45deg);
         }
     </style>
   </head>
@@ -50,6 +64,51 @@
     </div>
 
     <div class="div2">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          sunt.
+        </p>
+        <p class="destaque">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          sunt.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          sunt.
+        </p>
+      </div>
+
+      <div class="div3">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          sunt.
+        </p>
+        <p class="destaque">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          sunt.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          sunt.
+        </p>
+      </div>
+
+      <div class="div4">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          sunt.
+        </p>
+        <p class="destaque">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          sunt.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          sunt.
+        </p>
+      </div>
+
+      <div class="div5">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
           sunt.
