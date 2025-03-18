@@ -28,12 +28,9 @@ body{
 
 .image {
     flex-basis: calc(25% - 1em);
-    height: auto;
-    box-sizing: border-box; 
-    justify-content: center;
-    align-items: center;  
     position: relative;
     overflow: hidden; 
+    flex-grow: 1; /*todos devem aumentar por igual*/
 }  
 
 .gallery img {
