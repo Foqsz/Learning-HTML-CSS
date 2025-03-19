@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #ff7833;
+  --secondary-color: #31333b;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex; /* para ficar lado a lado*/
+  margin: 0;
+  color: #e7e7e7;
+  background-color: #ccc;
+  font-family: Cascadia Code, "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.main-header {
+  flex: 0 0 26rem;
+  background-color: var(--secondary-color);
+}
+
+.main {
+  background-color: #444856;
+  flex: 1 0; /* aumentar se tiver espaço sobrando*/
+}
+
+a {
+  color: inherit; /*herdar a cor*/
+}
+
+.main,
+.main-header {
+  font-size: 1.6rem;
+}
+
+.perfil-img{
+    max-width: 10rem;
+}
+
+.nav li{ 
+    list-style: none;
+    padding: 1.6rem;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.nav li:hover{
+  background-color: #444856;
+  transform: scale(1.1);
+  transition: background-color .1s ease-in-out;
+}
