@@ -1,6 +1,7 @@
 :root {
   --primary-color: #ff7833;
   --secondary-color: #31333b;
+  --secondary-color-light: #444856;
 }
 
 html {
@@ -15,6 +16,32 @@ body {
   font-family: Cascadia Code, "Lucida Sans", "Lucida Sans Regular",
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   min-height: 100vh;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #b7b7b7;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+    margin: 0;
+}
+
+h2{
+    margin-top: 1rem;
+}
+
+article{
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .main-header {
@@ -23,8 +50,9 @@ body {
 }
 
 .main {
-  background-color: #444856;
+  background-color: var(--secondary-color-light);
   flex: 1 0; /* aumentar se tiver espaço sobrando*/
+  padding: 6.5rem 6rem 7.5rem;
 }
 
 a {
@@ -36,23 +64,34 @@ a {
   font-size: 1.6rem;
 }
 
-.perfil-img{
-    max-width: 10rem;
+.perfil-img {
+  max-width: 10rem;
 }
 
-.nav li{ 
-    list-style: none;
-    padding: 1.6rem;
-    border-bottom: 1px solid #ccc;
-    text-align: right;
+.main-nav {
+  text-align: right;
+  padding: 6.5rem 2.4rem 2.4rem;
 }
 
-.nav a{
-    text-decoration: none;
+.main-nav ul {
+  padding: 0;
+  list-style-type: none;
 }
 
-.nav li:hover{
-  background-color: #444856;
-  transform: scale(1.1);
-  transition: background-color .1s ease-in-out;
+.main-nav ul a {
+  display: block;
+  padding: 1.2rem 0;
+  text-decoration: none;
+  transition: padding-right 0.2s, background-color 0.4s;
+  background-color: transparent;
+}
+
+.main-nav li {
+  border-bottom: 1px solid #7b7b7b;
+  padding: 0.4rem 0;
+}
+
+.main-nav ul a:hover {
+  background-color: var(--secondary-color-light);
+  padding-right: 1rem;
 }
