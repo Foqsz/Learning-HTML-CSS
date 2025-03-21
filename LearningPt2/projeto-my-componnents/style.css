@@ -39,9 +39,16 @@ h2 {
   margin-top: 1rem;
 }
 
+.hightlight {
+  border-left: 1px solid var(--primary-color);
+  font-size: 1.1em;
+  padding-left: 2em;
+  margin-bottom: 2.2em;
+}
+
 article {
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .kbd {
@@ -110,7 +117,27 @@ a {
   padding: 0.4rem 0;
 }
 
+.main-nav ul a:focus,
 .main-nav ul a:hover {
   background-color: var(--secondary-color-light);
   padding-right: 1rem;
+}
+
+.card {
+  max-width: 740px;
+  background-color: var(--secondary-color);
+  padding: 0;
+}
+
+.card_content{
+  padding: .5em 1em 1em;
+}
+
+.card_content p,
+.card_title{
+  margin: 0;
+}
+
+.card_title{
+  font-size: 1.75em;
 }
