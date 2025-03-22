@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="#">
+          <img src="Imagens/perfil.png" alt="perfil" class="perfil-img" />
+        </a>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tipografia.html">Tipografia</a></li>
+          <li><a href="cards.html">Cards</a></li>
+          <li><a href="listas.html">Listas</a></li>
+          <li><a href="formulario.html">Formulário</a></li>
+          <li><a href="botoes.html">Botões</a></li>
+          <li><a href="tabelas.html">Tabelas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1>My Componnents</h1>
+ 
+        <section>
+            <h2>Entre em contato</h2>
+
+            <div class="row">
+
+                 <form action="">
+                    <div class="row">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                        </div>
+                        <div>
+                            <label for="Email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="off">
+                        </div>
+                    </div>
+                    
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="6"></textarea>
+
+                    <input type="submit" value="Enviar" class="btn">
+                 </form>
+
+                    <address>
+                        <p> <b>Endereço</b> Rua das Orquídeas, 123</p>
+                        <p> <b>Bairro</b> Bairro Jardim Primavera</p>
+                        <p> <b>Cidade</b> Cidade Sol Nascente - SP</p>
+                    </address>
+            </div>    
+        </section> 
+    </main>
+  </body>
+</html>
