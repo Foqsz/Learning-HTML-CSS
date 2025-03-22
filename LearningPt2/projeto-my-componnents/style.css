@@ -200,7 +200,8 @@ select {
   box-sizing: border-box; /*se tiver ppadding, nao quero q exceda os 100%*/
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
   width: auto;
 }
 
@@ -222,4 +223,12 @@ input, textarea, select{
 
 .btn:hover, .btn:focus{
   background-color: var(--secondary-color-dark);
+}
+
+.form-quiz{
+  width: calc(50% - 1.5rem);
+}
+
+.btn-stroke{
+  background-color: transparent;
 }
