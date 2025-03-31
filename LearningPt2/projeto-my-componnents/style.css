@@ -269,11 +269,18 @@ input, textarea, select{
 
 .table td,
 .table th{
-  border-bottom: 2px solid var(--secondary-color-dark);
   padding: 1.6rem;
+}
+
+.table:not(.table-alternate) td{
+  border-bottom: 2px solid var(--secondary-color-dark);
 }
 
 .table th{
   text-transform: uppercase;
   text-align: left;
+}
+
+.table-alternate tbody tr:nth-child(odd){ 
+  background-color: var(--secondary-color);
 }
