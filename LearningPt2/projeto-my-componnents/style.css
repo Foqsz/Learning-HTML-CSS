@@ -42,6 +42,10 @@ h2 {
   margin-top: 1rem;
 }
 
+h3{
+  text-align: center;
+}
+
 .hightlight {
   border-left: 1px solid var(--primary-color);
   font-size: 1.1em;
@@ -272,7 +276,8 @@ input, textarea, select{
   padding: 1.6rem;
 }
 
-.table:not(.table-alternate) td{
+.table:not(.table-alternate) td,
+.table:not(.table-alternate) th{
   border-bottom: 2px solid var(--secondary-color-dark);
 }
 
@@ -283,4 +288,9 @@ input, textarea, select{
 
 .table-alternate tbody tr:nth-child(odd){ 
   background-color: var(--secondary-color);
+}
+
+.table-verticalLines td:not(:last-child),
+.table-verticalLines th:not(:last-child){
+  border-right: 1px solid var(--secondary-color-dark);
 }
