@@ -256,3 +256,24 @@ input, textarea, select{
   margin-left: 0;
   margin-top: 2rem;
 }
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td:last-child,
+.table th:last-child{
+  text-align: right;
+}
+
+.table td,
+.table th{
+  border-bottom: 2px solid var(--secondary-color-dark);
+  padding: 1.6rem;
+}
+
+.table th{
+  text-transform: uppercase;
+  text-align: left;
+}
