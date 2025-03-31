@@ -3,6 +3,8 @@
   --secondary-color: #31333b;
   --secondary-color-light: #444856;
   --secondary-color-dark: #23252d;
+
+  --default-gap: 3rem;
 }
 
 html {
@@ -154,7 +156,7 @@ a {
 
 .row {
   display: flex;
-  gap: 3rem;
+  gap: var(--default-gap);
   padding-top: 1.5rem;
   justify-content: space-between;
 }
@@ -219,6 +221,17 @@ input, textarea, select{
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
+  /* padding: 1.2rem; */
+  padding: .8em 1.2em;
+  border-radius: 5px;
+}
+
+.btn + .btn{
+  margin-left: 2rem;
+}
+
+.btn-big{
+  font-size: 1.6rem;
 }
 
 .btn:hover, .btn:focus{
@@ -226,9 +239,20 @@ input, textarea, select{
 }
 
 .form-quiz{
-  width: calc(50% - 1.5rem);
+  width: calc(50% - var(--default-gap) / 2);
 }
 
 .btn-stroke{
   background-color: transparent;
+}
+
+.btn-full{
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-full + .btn-full{
+  margin-left: 0;
+  margin-top: 2rem;
 }
