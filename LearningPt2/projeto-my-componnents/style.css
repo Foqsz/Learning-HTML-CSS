@@ -16,7 +16,7 @@ body {
   margin: 0;
   color: #e7e7e7;
   background-color: #ccc;
-  font-family: Cascadia Code, "Lucida Sans", "Lucida Sans Regular",
+  font-family: "Lucida Sans", "Lucida Sans Regular",
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   min-height: 100vh;
   line-height: 1.7;
@@ -46,9 +46,9 @@ h2 {
   margin-top: 1rem;
 }
 
-h3{
+/* h3{
   text-align: center;
-}
+} */
 
 .hightlight {
   border-left: 1px solid var(--primary-color);
@@ -97,8 +97,30 @@ section {
   padding: 6.5rem 6rem 100vh;
 }
 
-a {
+a{
   color: inherit; /*herdar a cor*/
+}
+
+.redesSociais { 
+  text-decoration: none;
+  font-style: normal;
+  transition: color 0.4s, background-color 0.4s;
+} 
+
+.redesSociais,
+.editLogo{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem; 
+}
+
+.editLogo{
+  font-size: 4rem;  
+}
+
+.redesSociais:hover, .editLogo:hover{
+  color: var(--primary-color);  
 }
 
 .main,
