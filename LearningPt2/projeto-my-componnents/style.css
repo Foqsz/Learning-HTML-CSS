@@ -20,6 +20,10 @@ body {
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   min-height: 100vh;
   line-height: 1.7;
+  background-image: url(/LearningPt2/projeto-my-componnents/Imagens/bg-unsplash.png);
+  background-repeat: no-repeat;
+  background-size: cover; /*não deixar areas sem cobrir */
+  background-attachment: fixed;
 }
 
 h1 {
@@ -83,11 +87,12 @@ section {
 
 .main-header {
   flex: 0 0 26rem;
-  background-color: var(--secondary-color);
+  background-color: rgba(49, 51, 59, .8);
 }
 
 .main {
   background-color: var(--secondary-color-light);
+  background-color: rgba(68, 72, 86, .6);
   flex: 1 0; /* aumentar se tiver espaço sobrando*/
   padding: 6.5rem 6rem 100vh;
 }
@@ -108,6 +113,9 @@ a {
 .main-nav {
   text-align: right;
   padding: 6.5rem 2.4rem 2.4rem;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .main-nav ul {
