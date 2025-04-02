@@ -84,3 +84,33 @@ section{
 .cores.cores:nth-of-type(9){
     background-image: radial-gradient(ellipse at 10% 50%, blue, #f008 20%);
 }
+
+.cores.cores:nth-of-type(10){
+    background-image: radial-gradient(closest-corner at 50px 20px, blue, #f008);
+}
+
+.cores.cores:nth-of-type(11){
+    background-image: radial-gradient(farthest-corner at 50px 20px, blue, #f008);
+}
+
+.cores.cores:nth-of-type(12){
+    background-image: radial-gradient(closest-corner at 50px 20px, blue, #f008);
+}
+
+.cores.cores:nth-of-type(13){
+    background-image: radial-gradient(farthest-side at 50px 20px, blue, #f008);
+}
+
+.cores.cores:nth-of-type(14){
+    background-image: radial-gradient(circle farthest-side at 50px 20px, blue, #f008);
+}
+
+.cores.cores:nth-of-type(15){
+    background-image: radial-gradient(circle farthest-side at 50px 20px, #00f8, #f008),
+    radial-gradient(circle farthest-corner at top right, green, transparent);
+}
+
+.cores.cores:nth-of-type(16){
+    background-image: radial-gradient(at top, #00f8, #f008),
+    radial-gradient(at bottom, green, transparent);
+}
