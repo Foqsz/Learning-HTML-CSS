@@ -1,0 +1,28 @@
+body{
+    font-family: sans-serif;
+    background-image: url(imagens/tile.png);
+}
+
+.cores{
+    width: 80%;
+    border: 8px solid black;
+    margin: 20px auto;
+    padding: 26px;
+}
+
+.cores p{
+    margin: 0;
+}
+
+section{
+    counter-reset: contador;
+}
+
+.cores{
+    counter-increment: contador;
+}
+
+.cores::before{
+    content: "[ "counter(contador) " ]";
+    color: red;
+}
