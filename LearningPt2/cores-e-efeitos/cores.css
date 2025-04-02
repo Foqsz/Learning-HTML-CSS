@@ -1,8 +1,12 @@
+:root{
+    --primary-color: #e10f0f;
+}
+
 body{
     font-family: sans-serif;
-    background-image: linear-gradient(transparent 50%, red, blue), url(imagens/tile.png);
+    background-image: linear-gradient(transparent, red, black), url(imagens/tile.png);
     background-attachment: fixed, scroll;
-    background-blend-mode: difference;
+    background-blend-mode: color;
 }
 
 h1{
@@ -10,8 +14,9 @@ h1{
 }
 
 .cores{
+    /* background-color: color-mix(in srgb, var(--primary-color), transparent); */
     width: 80%;
-    border: 8px solid black;
+    border: 8px solid color-mix(in srgb, var(--primary-color), transparent);
     margin: 20px auto;
     padding: 26px;
 }
