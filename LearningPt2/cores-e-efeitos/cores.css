@@ -16,7 +16,7 @@ h1{
 .cores{
     /* background-color: color-mix(in srgb, var(--primary-color), transparent); */
     width: 80%;
-    border: 8px solid color-mix(in srgb, var(--primary-color), transparent);
+    border: 8px dashed color-mix(in srgb, var(--primary-color), transparent);
     margin: 20px auto;
     padding: 26px;
 }
@@ -40,4 +40,9 @@ section{
     font-weight: bold;
     display: inline-block;
     margin-bottom: 16px;
+}
+
+.cores:nth-of-type(2){
+    background-color: white;
+    background-clip: content-box;
 }
