@@ -114,3 +114,19 @@ section{
     background-image: radial-gradient(at top, #00f8, #f008),
     radial-gradient(at bottom, green, transparent);
 }
+
+.cores.cores:nth-of-type(17){
+    background-image: conic-gradient(blue, red, green, yellow, blue, red, green, yellow);
+}
+
+.cores.cores:nth-of-type(18){
+    background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f00);
+    transition: filter 2s linear;
+    aspect-ratio: 1;
+}
+
+.cores.cores:nth-of-type(18):hover{
+    background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f00);
+    filter: hue-rotate(360deg);
+}
+
