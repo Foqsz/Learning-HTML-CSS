@@ -130,3 +130,46 @@ section{
     filter: hue-rotate(360deg);
 }
 
+.cores.cores:nth-of-type(19){
+    background-image: linear-gradient(white, black, white, black)
+}
+
+.cores.cores:nth-of-type(20){
+    background-image: radial-gradient(white 0px, white 10px, black 10px, black 20px)
+}
+
+.cores.cores:nth-of-type(21){
+    background-image: radial-gradient(white 0deg, white 10deg, black 10deg, black 20deg)
+}
+
+.cores.cores:nth-of-type(22){
+    background-image: repeating-conic-gradient(transparent 0deg, transparent 10deg, black 10deg, black 20deg),
+    repeating-radial-gradient(red 0%, transparent, blue 20%);
+    background-attachment: fixed, scroll;
+}
+
+.cores.cores:nth-of-type(23){
+    background-image: repeating-conic-gradient(red 0%, transparent, blue 20%),
+    repeating-radial-gradient(red, blue);
+    background-attachment: scroll, fixed;
+}
+
+.cores.cores:nth-of-type(24){
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, .8);
+}
+
+.cores.cores:nth-of-type(25){
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .8));
+}
+
+.cores.cores:nth-of-type(26){
+    background-image: linear-gradient(to top right, transparent 50%, red 50%);
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, .8);
+}
+
+.cores.cores:nth-of-type(27){
+    background-image: linear-gradient(to top right, transparent 50%, red 50%);
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .8));
+}
+
+
