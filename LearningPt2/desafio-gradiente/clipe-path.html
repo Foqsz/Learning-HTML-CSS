@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clip Path</title>
+    <style>
+      body {
+        background-color: #651313;
+        font-family: Tahoma;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .card-tittle {
+        margin: 0;
+        font-weight: lighter;
+      }
+
+      .card {
+        width: 300px;
+        background-color: antiquewhite;
+
+        flex-basis: clamp(300px, calc(30% - 25px), 400px);
+        flex-grow: 1;
+
+        padding: 40px 30px 30px 50px;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      .card::before {
+        content: "";
+        display: block;
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .exemplo {
+        width: 0;
+        height: 0;
+        background-color: blueviolet;
+        border-top: 25px solid black;
+        border-right: 25px solid white;
+        margin-top: 30px;
+      }
+
+      .clippath > div {
+        width: 300px;
+        height: 300px;
+        margin: 30px;
+        background-image: repeating-linear-gradient(
+          45deg,
+          yellow 10%,
+          orange 20%
+        );
+      }
+
+      #d1 {
+        clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 20% 50%);
+      }
+
+      #d2 {
+        clip-path: circle(50% at center);
+      }
+
+      #d3 {
+        clip-path: ellipse(50% 50px at center);
+      }
+
+      #d4 {
+        clip-path: inset(20px 30px 40px 50px);
+      }
+
+      #d5{
+        clip-path: inset(30px round 50px 20px);
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card">
+      <h2 class="card-tittle">Iron Maiden</h2>
+      <p>
+        é uma das bandas de heavy metal mais influentes e icônicas da história.
+        Formada em 1975, a banda é conhecida por suas letras épicas, riffs de
+        guitarra marcantes e performances ao vivo impressionantes. Com álbuns
+        clássicos como "The Number of the Beast" e "Powerslave", o Iron Maiden
+        conquistou uma base de fãs leal em todo o mundo.
+      </p>
+    </article>
+
+    <div class="exemplo"></div>
+
+    <section class="clippath">
+      <div id="d1"></div>
+      <div id="d2"></div>
+      <div id="d3"></div>
+      <div id="d4"></div>
+      <div id="d5"></div>
+    </section>
+  </body>
+</html>
