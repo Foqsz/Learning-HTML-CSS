@@ -2,15 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media Querie</title>
-    <link rel="stylesheet" href="type_media_print.css" media="print" />
+    <!-- <link rel="stylesheet" href="type_media_print.css" media="print" /> -->
   </head>
   <style>
     @media screen and (max-width:500px) {
       body {
         background-color: brown;
         color: white;
-        font-family: sans-serif;
+        font-family: sans-serif; 
       }
     }
 
@@ -23,10 +24,18 @@
         background-color: #ff0000;
       }
     }
+
+    .teste{
+        width: 320px;
+        height: 80px;
+        background-color: darkorange;
+    }
   </style>
   <body class="only-print">
     <h1>Media Types</h1>
 
     <a href="serliv.com" title="Deus é Fiel">Serliv - Cursos</a>
   </body>
+
+  <div class="teste">teste</div>
 </html>
