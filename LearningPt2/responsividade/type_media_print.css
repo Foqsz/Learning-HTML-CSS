@@ -1,0 +1,10 @@
+body.only-print {
+  color: blue;
+  font-family: serif;
+}
+
+a::after{
+    content:"(" attr(href) ") - (" attr(title) ")";
+    display: inline-block;
+    margin-left: .5em;
+}
