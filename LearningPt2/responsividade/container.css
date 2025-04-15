@@ -39,13 +39,23 @@ body{
     margin: 0 0 1em;
 }
 
-.card_wrapper,
+/* .card_wrapper,
 main{
     container-type: inline-size;
+} */
+
+.card_wrapper{
+    /* container-name: cardWrapper; */
+    container: cardWrapper / inline-size;
+}
+
+main{
+    /* container-name: main; */
+    container: main / inline-size;
 }
 
 /* @media screen and (min-width: 50em){ */
-@container (min-width: 50em){
+@container cardWrapper (min-width: 50em){
     .card{
         flex-direction: row;
     }
@@ -62,7 +72,7 @@ main{
 }
 
 /* @media screen and (min-width: 70em) */
-@container (min-width: 70em)
+@container main (min-width: 70em)
 {
     .cards_container{
         flex-direction: row;
