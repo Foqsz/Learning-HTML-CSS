@@ -23,6 +23,7 @@ body{
     padding: 1em;
     box-sizing: border-box;
     background-color: #ccc;
+    flex-grow: 1;
 }
 
 .card_btn{
@@ -45,5 +46,18 @@ body{
 
     .card_header img{
         max-height: initial; 
+    }
+}
+
+.cards_container{
+    display: flex;
+    gap: 1em;
+    flex-direction: column; 
+}
+
+@media screen and (min-width: 70em)
+{
+    .cards_container{
+        flex-direction: row;
     }
 }
