@@ -1,0 +1,51 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.header-main { 
+    text-align: center;
+}
+
+.nav-main{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-nav {
+    list-style-type: none;  
+    margin: 0; 
+    padding: 0;
+}
+
+.ul-nav li {
+    padding: 1rem;
+    color: #ffffff;
+    cursor: pointer;  
+    background-color: #6c0370;
+    flex-grow: 1;
+} 
+
+@media screen and (min-width: 48.12em){
+    .header-main{   
+        display: flex;
+        justify-content: space-between; 
+    }
+    
+    .ul-nav{ 
+        list-style-type: none; 
+        display: flex;
+    }
+
+    .ul-nav li{
+        padding: 1rem;
+        color: #6c0370;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .nav-main{
+        display: inline-block;  
+    }
+}
+
