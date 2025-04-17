@@ -173,3 +173,30 @@ h1, h2, h3, h4{
         text-shadow: 4px 4px 2px rgb(0 0 0 / .8);
     }
 }
+
+.middleContent{
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 2em;
+}
+
+.middleContent a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.middleContent_title{
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 1.25em;
+}
+
+.middleContent span[class^="icon-"] /* para spans que commeçam com a class "icon-" */
+{ 
+    color: var(--primary-color); 
+    font-size: 3.5em;
+}
+
+.middleContent p{
+    line-height: 1.5;
+}
