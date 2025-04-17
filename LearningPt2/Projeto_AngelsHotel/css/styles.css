@@ -6,6 +6,10 @@ html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
+h1, h2, h3, h4{
+    font-family: "Oxygen", sans-serif;
+}
+
 .maxWidth{
     max-width: 70.25em;
     margin: auto;
@@ -84,4 +88,79 @@ html{
 
 .heroBanner_iconPlay img{
     width: 100%; 
+}
+
+.heroBanner_title{
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin: 1.5em 0;
+}
+
+.heroBanner_subTitle{ 
+    font-size: 1em;
+    color: color-mix(in srgb, var(--primary-color), white);
+    line-height: 1.5;
+}
+
+.heroBanner_btn{
+    display: inline-block; /*pra area clicavel aumentar*/
+    padding: .9em 2em;
+    background-color: #58c4c4;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 48.75em){
+    .heroBanner{
+        background-color: var(--primary-color);
+    }
+
+    .heroBanner_title, .heroBanner_subTitle{
+        color: white; 
+    } 
+
+    .heroBanner_iconPlay {
+        display: block;
+        margin: auto;
+    } 
+}
+
+@media screen and (min-width: 56.25em)
+{
+    .heroBanner{
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        aspect-ratio: 1198 / 670;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .heroBanner .maxWidth{
+        margin: initial;
+        width: 75%;
+        margin-bottom: 4em;
+    }
+}
+
+@media screen and (min-width: 74em)
+{
+    .heroBanner{
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        background-position: center top;
+        background-color: var(--primary-color);
+        background-repeat: no-repeat;
+
+        max-height: 80vh;
+        width: 100%;
+    }
+
+    .heroBanner .maxWidth{
+        width: 50%;
+    }
+
+    .heroBanner_iconPlay{
+        width: 7em;
+        height: 7em;
+    }
 }
