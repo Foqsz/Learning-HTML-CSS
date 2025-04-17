@@ -1,5 +1,6 @@
 :root{
     --primary-color: #612674;
+    --default-gap: 1rem;
 }
 
 html{
@@ -199,4 +200,31 @@ h1, h2, h3, h4{
 
 .middleContent p{
     line-height: 1.5;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--default-gap);
+}
+
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-sm-12{
+    width: 100%;
+}
+
+@media screen and (min-width: 48.75em){
+    .col-md-6{
+        width: calc(50% - var(--default-gap));
+    }
+}
+
+@media screen and (min-width: 74em){
+    .col-xl-3{
+        width: calc(25% - var(--default-gap));
+    }
 }
