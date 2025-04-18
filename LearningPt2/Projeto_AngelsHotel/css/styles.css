@@ -273,6 +273,17 @@ h1, h2, h3, h4{
     }
 
     .mainContent_title{
-        margin: 0;
+        margin-top: 0;
     }
+
+    .mainContent_img img{
+        max-height: 252px;
+    }
+}
+
+.rodape{
+    background-color: #25303e;
+    padding: 2.5em;
+    color: #83969f;
+    text-align: center;
 }
