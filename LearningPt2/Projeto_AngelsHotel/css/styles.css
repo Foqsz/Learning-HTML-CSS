@@ -227,4 +227,52 @@ h1, h2, h3, h4{
     .col-xl-3{
         width: calc(25% - var(--default-gap));
     }
+
+    .col-xl-6{
+        width: calc(50% - var(--default-gap)); 
+    }
+}
+
+.mainContent{
+    padding: 2em;
+}
+
+.mainContent p{
+    line-height: 1.2;
+}
+
+.mainContent_img img{
+    width: 100%;;
+}
+
+.mainContent_title{
+    text-transform: uppercase;
+    color: var(--primary-color); 
+    font-weight: normal;
+    letter-spacing: .2em;
+    font-size: 1.25em;
+}
+
+.mainContent .row{
+    row-gap: 4em; 
+} 
+
+.mainContent_article{
+    container: main-content / inline-size;
+}
+
+@container main-content (min-width: 500px)
+{
+    .mainContent_container{
+        display: flex;
+    }
+
+    .mainContent_text{ 
+        margin-top: 0;
+        padding-left: 1em;
+    }
+
+    .mainContent_title{
+        margin: 0;
+    }
 }
