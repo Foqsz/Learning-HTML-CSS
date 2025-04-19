@@ -277,7 +277,15 @@ h1, h2, h3, h4{
     }
 
     .mainContent_img img{
-        max-height: 252px;
+        max-height: 382px;
+    }
+
+    .mainContent_img{
+        flex: 0 0 25%; /*pra nao se expandir nem dimiuir*/
+    }
+
+    .mainContent_text{
+        flex-grow: 1;
     }
 }
 
