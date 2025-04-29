@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pictures</title>
+
+    <style>
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="/LearningPt2/incoporar-replaced-elements/imagens/1280.jpg"
+      alt="alt"
+      srcset="
+        /LearningPt2/incoporar-replaced-elements/imagens/960.jpg 960w,
+        /LearningPt2/incoporar-replaced-elements/imagens/640.jpg 640w,
+        /LearningPt2/incoporar-replaced-elements/imagens/480.jpg 480w
+      "
+      sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"
+    />
+
+    <hr />
+
+    <picture>
+      <source
+        media="(min-width 900px)"
+        srcset="
+          /LearningPt2/incoporar-replaced-elements/imagens/1280.jpg 1280w,
+          /LearningPt2/incoporar-replaced-elements/imagens/960.jpg   960w,
+          /LearningPt2/incoporar-replaced-elements/imagens/640.jpg   640w
+        "
+        sizes="33vw"
+      />
+      <source
+        media="(min-width: 600px)"
+        srcset="
+          /LearningPt2/incoporar-replaced-elements/imagens/1280.jpg 1280w,
+          /LearningPt2/incoporar-replaced-elements/imagens/960.jpg   960w,
+          /LearningPt2/incoporar-replaced-elements/imagens/640.jpg 640w,
+          /LearningPt2/incoporar-replaced-elements/imagens/960.jpg   50vw
+        "
+        sizes="50vw"
+      />
+      <img src="/LearningPt2/incoporar-replaced-elements/imagens/1280.jpg" alt="aa">
+    </picture>
+  </body>
+</html>
