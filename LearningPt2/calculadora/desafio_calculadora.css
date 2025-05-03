@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    background-color: #05035a;
+}
+
+h1{ 
+    color: white;
+    font-family: "Pacifico", sans-serif;
+    letter-spacing: 4px; 
+}
+
+main{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.main-content{
+    background-color: #0e08ca;  
+    width: 400px; 
+}
+
+.grid{  
+    display: grid; 
+    gap: 10px;
+    margin: 20px;
+    grid-template-columns: repeat(4, [col-start] 1fr [col-end]); 
+    grid-template-rows: [row1-start] 75px [row1-end row2-start] 75px [row2-end row3-start] 75px [row3-end row4-start] 75px [row4-end row5-start] 75px [row5-end row6-start] 75px [row6-end];
+}
+
+.calcNumbers{
+    background-color: #1d1c1c;
+    padding: 10px;  
+    color: white; 
+    font-size:24px;
+} 
+
+.calcNumbers:hover{
+    background-color: #2d2c2c;
+    cursor: pointer;
+}
+
+.btn-result{
+    text-align: right;
+    grid-column: col-start 1 / col-end 4;
+    margin-bottom: 10px;
+} 
+
+.btn-0{
+    grid-column: col-start 1 / col-end 2; 
+}
+
+.btn-Mais{
+    grid-column: col-start 4 / col-end 4;
+    grid-row: row5-start / row6-end;
+}
