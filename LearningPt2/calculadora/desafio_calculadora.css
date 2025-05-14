@@ -29,7 +29,7 @@ main{
     gap: 10px;
     margin: 20px;
     grid-template-columns: repeat(4, [col-start] 1fr [col-end]); 
-    grid-template-rows: [row1-start] 75px [row1-end row2-start] 75px [row2-end row3-start] 75px [row3-end row4-start] 75px [row4-end row5-start] 75px [row5-end row6-start] 75px [row6-end];
+    grid-template-rows: repeat(6, 75px);
 }
 
 .calcNumbers{
@@ -44,10 +44,11 @@ main{
     cursor: pointer;
 }
 
-.btn-result{
+.btn-output{
     text-align: right;
     grid-column: col-start 1 / col-end 4;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
+    color: yellowgreen; 
 } 
 
 .btn-0{
@@ -56,5 +57,5 @@ main{
 
 .btn-Mais{
     grid-column: col-start 4 / col-end 4;
-    grid-row: row5-start / row6-end;
+    grid-row: 5 / 7;
 }
