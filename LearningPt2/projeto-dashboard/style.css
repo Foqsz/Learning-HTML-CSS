@@ -2,10 +2,13 @@
   --primary-color: #004eda;
   --grey: #f2f2f8;
   --default-padding: 2rem;
+  --black: #111;
+  --color-text: #5A5A5F;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  color: var(--color-text);
   display: grid;
   grid-template-columns: 240px 1fr;
   grid-template-rows: 64px auto;
@@ -19,7 +22,7 @@ img{
 .main-Nav{
     grid-row: 1 / -1;
     grid-column: 1 / 2; 
-    background-color: #ccc;
+    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -27,7 +30,10 @@ img{
 .top-Nav{
     grid-row: 1 / 2;
     grid-column: 2 / -1; /* -1 = ultima */ 
-    background-color: #ddd;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main{
@@ -40,7 +46,7 @@ main{
     padding-left: var(--default-padding);
     padding-top: var(--default-padding);
     display: inline-block;
-    color: #111;
+    color: var(--black);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -60,9 +66,10 @@ main{
     color: #5A5A5F;
 }
 
-.top-Nav_menu{ 
-    display: flex; 
-    gap: var(--default-padding);  
+.top-Nav_menu{
+    display: flex;
+    gap: var(--default-padding);
+    
 }
 
 .main-Nav_menus{
@@ -77,6 +84,19 @@ main{
     padding-bottom: var(--default-padding);
 }
 
-.perfil_thumb{ 
-    justify-content: space-between;
+.perfil{
+    margin-right: var(--default-padding);
+}
+
+.perfil_name{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.perfil_rule{
+    font-size: .7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--black), transparent 60%)
 }
