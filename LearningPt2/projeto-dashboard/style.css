@@ -66,6 +66,11 @@ main{
     color: #5A5A5F;
 }
 
+.main-Nav_menu svg, 
+.top-Nav_menu svg{
+    vertical-align: bottom;
+}
+
 .top-Nav_menu{
     display: flex;
     gap: var(--default-padding);
@@ -86,6 +91,21 @@ main{
 
 .perfil{
     margin-right: var(--default-padding);
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.perfil_thumb{
+    height: 60px; 
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-right: calc(var(--default-padding) / 2);
+    box-sizing: border-box;
+}
+
+.perfil_thumb img{
+    height: 100%; 
 }
 
 .perfil_name{
