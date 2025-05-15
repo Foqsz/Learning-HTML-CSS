@@ -26,6 +26,9 @@ img{
     background-color: white;
     display: flex;
     flex-direction: column;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .top-Nav{
@@ -110,6 +113,10 @@ main > figure{
     padding-bottom: var(--default-padding);
 }
 
+.main-Nav_menu li{
+    margin-top: 1rem;
+}
+
 .perfil{
     margin-right: var(--default-padding);
     display: flex;
@@ -168,8 +175,7 @@ main > figure{
     margin-left: var(--middle-padding);
 }
 
-.description{
-    /* display: flex;  */
+.description{ 
     font-weight: 500;
 }
 
