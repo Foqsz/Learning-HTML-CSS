@@ -189,6 +189,11 @@ main > figure{
     font-weight: 500;
 }
 
+.main-Nav_menu li:hover{
+    opacity: 0.5; 
+    transition: all 0.2s ease-in-out; 
+}
+
 .btn{
     padding: 20px;
     background-color: var(--primary-color);
