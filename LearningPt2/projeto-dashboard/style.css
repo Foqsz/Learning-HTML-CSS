@@ -203,6 +203,11 @@ main > figure{
     padding: calc(var(--middle-padding) / 2) var(--default-padding);
 }
 
+.btn:hover{
+    background-color: #092363;
+    transition: all 0.2s ease-in-out; 
+}
+
 .summary_btn{
     align-self: stretch;
     display: flex;
