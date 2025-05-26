@@ -8,7 +8,7 @@ Este repositório é o meu espaço de aprendizado, onde compartilho meus projeto
 
 ## Contato  
 
-- **LinkedIn:** [https://www.linkedin.com/in/victor-vinicius-2a9166255/](https://www.linkedin.com/in/victor-vinicius-2a9166255/)
+- **LinkedIn:** [https://www.linkedin.com/in/victorvinicius/](https://www.linkedin.com/in/victorvinicius/)
 
 Estou aberto a colaborações, sugestões e feedback. Vamos aprender e explorar o mundo do controle de versão com Git e GitHub juntos! 🚀
 
