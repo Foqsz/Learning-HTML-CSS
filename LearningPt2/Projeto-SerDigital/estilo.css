@@ -21,6 +21,10 @@ body {
     list-style-type: none;
     padding: 0;
     text-align: right;
+
+
+    /* TODO: funcionar com hamburguer menu */
+    display: none;
 }
 
 .header-menu a {
@@ -80,6 +84,10 @@ img {
     background-color: var(--gray);
     border-radius: 5px;
     padding: 1em;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
 .hide {
