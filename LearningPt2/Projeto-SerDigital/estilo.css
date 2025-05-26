@@ -15,6 +15,8 @@ body {
 
 .content-wrapper-center {
     padding: 1rem;
+    max-width: 67.25rem; /* 1076px */
+    margin: auto;
 }
 
 .header-menu {
@@ -149,4 +151,73 @@ img {
 .contato {
     margin-top: 6rem;
     margin-bottom: 6rem;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+    grid-auto-flow: dense; /* preenche os espaços vazios */
+}
+
+.row > .sm-12{
+    grid-column: 1 / -1;
+}
+
+@media (min-width: 46.25em)
+{
+    .row > .md-3{
+        grid-column: span 3; /* expandir 3 colunas */
+    }
+
+    .row > .md-4{
+        grid-column: span 4; /* expandir 4 colunas */
+    }
+
+    .row > .md-6{
+        grid-column: span 6; /* expandir 6 colunas */
+    }
+
+    .row > .md-9{
+        grid-column: span 9; /* expandir 9 colunas */
+    }
+
+    .row > .md-1-6{
+        grid-column: 1 / 7; /* primeira ate a 7 */
+    }
+
+    .row > .md-7-12{
+        grid-column: 7 / 13; /* setima ate a 13 */
+    }
+}
+
+@media (min-width: 90em)
+{
+    .row > .lg-3{
+        grid-column: span 3; /* expandir 3 colunas */
+    }
+
+    .row > .lg-4{
+        grid-column: span 4; /* expandir 4 colunas */
+    }
+
+    .row > .lg-5{
+        grid-column: span 5; /* expandir 5 colunas */
+    }
+
+    .row > .lg-6{
+        grid-column: span 6; /* expandir 6 colunas */
+    }
+
+    .row > .lg-7{
+        grid-column: span 7; /* expandir 7 colunas */
+    }
+
+    .lg-1-5{
+        grid-column: 1 / 6; /* primeira ate a 6 */
+    }
+
+    .lg-8-12{
+        grid-column: 8 / 13; /* oitava ate a 13 */
+    }
 }
