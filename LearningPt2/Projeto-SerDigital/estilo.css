@@ -300,11 +300,19 @@ img {
         grid-column: span 7; /* expandir 7 colunas */
     }
 
-    .lg-1-5{
+    .row >.lg-1-5{
         grid-column: 1 / 6; /* primeira ate a 6 */
     }
 
-    .lg-8-12{
+    .row >.lg-1-7{
+        grid-column: 1 / 8; /* primeira ate a 8 */
+    }
+
+    .row >.lg-1-8{
+        grid-column: 1 / 9; /* primeira ate a 9 */
+    }
+
+    .row >.lg-8-12{
         grid-column: 8 / 13; /* oitava ate a 13 */
     }
 }
