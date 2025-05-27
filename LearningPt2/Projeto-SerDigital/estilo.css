@@ -19,6 +19,10 @@ body {
     margin: auto;
 }
 
+.imagem{
+    text-align: center; /* centraliza a imagem */
+}
+
 .hero-title{
     margin-top: 0;
 }
@@ -28,8 +32,6 @@ body {
     padding: 0;
     text-align: right;
 
-
-    /* TODO: funcionar com hamburguer menu */
     display: none;
 }
 
@@ -112,6 +114,11 @@ img {
     padding: 1rem;
 }
 
+.testemunho_thumb{
+    width: 8.125rem; /* 130px */
+    height: 8.125rem; /* 130px */
+}
+
 .contato {
     background-color: var(--gray);
     border-radius: 5px;
@@ -125,7 +132,6 @@ img {
 
 .footer {
     background-color: var(--gray);
-    padding: 3rem 0;
 }
 
 .footer ul {
@@ -183,6 +189,40 @@ img {
 
 @media (min-width: 46.25em)
 {
+    body{
+        text-align: left; /* alinha o texto à esquerda */
+    }
+
+    .header{
+        display: flex; 
+        justify-content: space-between; /* pra ter espaço no meio */
+        align-items: center; /* alinha verticalmente */
+    }
+
+    .header-menu {
+        display: block;
+        margin: 0;
+    }
+
+    .header-menu li{
+        display: inline-block;
+        margin-left: 1.75rem; /* espaçamento entre os itens */
+    }
+
+    .header-menu a{
+        padding: 1rem;  
+    }
+
+    .testemunho{
+        display: flex;  
+        gap: 1rem; /* espaçamento entre imagem e texto */
+    }
+
+    .contato_image{
+        display: block; /* exibe a imagem de contato */ 
+        text-align: center; /* centraliza a imagem */
+    }
+
     .row{
         gap: 1rem;
     }
