@@ -433,7 +433,7 @@ img {
     transform: rotate(45deg);
 }
 
-.menu-btn:focus + .menu-icon{
+.menu-btn:focus-visible+.menu-icon{
     outline: 2px solid black;
     outline-offset: 3px;
 }
