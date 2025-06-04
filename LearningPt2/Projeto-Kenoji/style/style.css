@@ -1,0 +1,75 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(white, yellow);
+    display: flex;
+    font-family: Montserrat;
+}
+
+#wrapper{
+    width: 90%;   
+    max-width: 1340px;
+    margin: auto;
+}
+
+header{
+    padding: 50px 0;
+}
+
+h1{
+    font-size: 4.2rem;
+}
+
+h1 strong{
+    color: #961e1e; 
+    text-transform: uppercase;
+}
+
+main{
+    display: flex;
+    gap: 2rem;
+}
+
+main > * {
+    /* flex-grow: 1;
+    flex-basis: 0; */
+    flex: 1 0 0;
+}
+
+p{
+    font-size: 1rem; 
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+form{
+    display: flex;
+    gap: 1rem;
+}
+
+form input{
+    background: none;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 5px;
+    color: black;
+    font-family: inherit;
+}
+
+.btn{
+    background-color: #03039a;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes vaiEVolta { 
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); } 
+}
+
+.animation { 
+    animation: vaiEVolta 2s infinite;
+    animation-direction: alternate; 
+}
