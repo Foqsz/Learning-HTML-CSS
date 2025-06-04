@@ -4,6 +4,7 @@ body {
     background: linear-gradient(white, yellow);
     display: flex;
     font-family: Montserrat;
+    overflow: hidden;
 }
 
 #wrapper{
@@ -58,18 +59,61 @@ form input{
     font-family: inherit;
 }
 
-.btn{
+form input[type=submit]{
     background-color: #03039a;
     color: white;
     cursor: pointer;
 }
 
-@keyframes vaiEVolta { 
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(50px, 50px); } 
+form input[type=submit]::placeholder{
+    color: black;
+}
+
+@keyframes topLeft { 
+    from { transform: translate(0, 0); }
+    to { transform: translate(-10px, -30px); } 
 }
 
 .animation { 
-    animation: vaiEVolta 2s infinite;
-    animation-direction: alternate; 
+    position: relative;
+}
+
+.animation img{
+    position: absolute;
+}
+
+.animation img:nth-child(1){
+    left: 10px;
+    top: 150px;
+    animation: topLeft 2s infinite alternate;
+}
+
+.animation img:nth-child(2){
+    right: 10px;
+    top: 20px;
+    animation: topLeft 3s .5s infinite alternate;
+}
+
+.animation img:nth-child(3){
+    right: 0;
+    top: 0;
+    animation: topLeft 3.5s .5s infinite alternate;
+}
+
+.animation img:nth-child(4){
+    left: 100px;
+    bottom: -100px;
+    animation: topLeft 4s .5s infinite alternate;
+}
+
+.animation img:nth-child(5){
+    left: 100px;
+    top: -100px;
+    animation: topLeft 3s infinite alternate;
+}
+
+.animation img:nth-child(6){
+    right: 100px;
+    bottom: -100px;
+    animation: topLeft 4s infinite alternate;
 }
