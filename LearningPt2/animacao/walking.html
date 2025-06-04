@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking</title>
+
+    <style>
+        .cat{
+            width: 400px;
+            height: 200px;
+            background-image: url(../animacao/imagens/walking_sprite.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+
+            animation: walk 1s steps(12) infinite;
+            transform: scaleX(-1);
+        }
+
+        @keyframes walk{
+            from{
+                background-position: 0 0;
+            }
+
+            to{
+                background-position: 0 -2390px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="cat">cat</div>
+</body>
+</html>
