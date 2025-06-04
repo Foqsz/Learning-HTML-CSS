@@ -41,6 +41,16 @@
             } */
         }
 
+        @keyframes largura{
+            0%{
+                width: 100px;
+            }
+
+            100%{
+                width: 400px;
+            }
+        }
+
         #anima{
             outline: 3px solid red;
             width: 400px;
@@ -77,6 +87,26 @@
                         
             will-change: height;            
         }
+
+        #anima div:nth-child(4){      
+            animation: largura 5s;
+            animation-timing-function: steps(5, jump-end);
+        }
+
+        #anima div:nth-child(5){      
+            animation: largura 5s;
+            animation-timing-function: steps(5, jump-start);
+        }
+
+        #anima div:nth-child(6){      
+            animation: largura 5s;
+            animation-timing-function: steps(5, jump-none);
+        }
+
+        #anima div:nth-child(7){      
+            animation: largura 5s;
+            animation-timing-function: steps(5, jump-both);
+        }
     </style>
 </head>
 <body>
@@ -84,6 +114,10 @@
         <div>1</div>
         <div>2</div>
         <div>3</div>
+        <div>jump-end</div>
+        <div>jump-start</div>
+        <div>jump-none</div>
+        <div>jump-both</div>
     </div>
 </body>
 </html>
