@@ -42,7 +42,8 @@
         transform: perspective(600px) rotateY(25deg);
       }
 
-      #cena3, #cena4 {
+      #cena3,
+      #cena4 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
       }
@@ -52,24 +53,24 @@
         margin: 1rem;
       }
 
-      #cena3{
+      #cena3 {
         perspective: 600px;
         /* perspective-origin: center bottom; */
       }
 
-      #cena3 .plano{
+      #cena3 .plano {
         transform: rotateY(45deg);
+        backface-visibility: hidden;
       }
 
-      #cena4 .plano{
+      #cena4 .plano {
         transform: perspective(600px) rotateY(-50deg);
       }
 
       #cena4 .plano:hover {
         background-color: red;
         transform: rotateX(90deg);
-        transition: transform 2s cubic-bezier(0,1.43,1,1.61);
-        
+        transition: transform 5s cubic-bezier(0, 1.43, 1, 1.61);
       }
     </style>
   </head>
