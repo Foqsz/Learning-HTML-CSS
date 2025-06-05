@@ -11,7 +11,7 @@
         initial-value: green;
       }
 
-      @property --angle{
+      @property --angle {
         syntax: "<angle>";
         inherits: false;
         initial-value: 0deg;
@@ -19,8 +19,8 @@
 
       :root {
         --success-color: blue;
-        /*  --error-color: red;
-            --angle: 0deg; */
+        --error-color: red;
+        --angle: 0deg;
       }
 
       body {
@@ -29,11 +29,11 @@
         background-color: #10102e;
       }
 
-      .container {
+      /* .container {
       }
 
       .div2 {
-      }
+      } */
 
       b {
         color: var(--success-color, red);
@@ -44,12 +44,12 @@
         height: 200px;
         background-color: var(--success-color, blue);
         transform: rotate(var(--angle));
-        animation: rotate 5s linear infinite;
+        animation: rotateAnimate 2s linear infinite;
       }
 
-      @keyframes rotate {
+      @keyframes rotateAnimate {
         to {
-          --angle: 560deg;
+          --angle: 360deg;
         }
       }
     </style>
