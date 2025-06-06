@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card 3d</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: black;
+      }
+
+      .cena {
+        border: 2px solid #ccc;
+        width: 300px;
+        height: 400px;
+        margin: 60px;
+        perspective: 600px;
+      }
+
+      .card {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: 2s transform;
+      }
+
+      .cena:hover .card{
+        transform: rotateY(180deg);
+      }
+      
+      .card_face {
+        position: absolute; /*colocar a div front e back no mesmo lugar*/
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card_face-front {
+        /* background-color: #8c0d0d; */
+        background-image: url(../3d/imagens/carta-de-baralho-as-de-paus-isolada_1308-80924.png);
+        background-size: cover;
+        background-position: center;
+      }
+      .card_face-back {
+        /* background-color: #4206b8; */
+        background-image: url(../3d/imagens/yrqr_hpyw_210729.jpg);
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cena">
+      <div class="card">
+        <div class="card_face card_face-front">front</div>
+        <div class="card_face card_face-back">back</div>
+      </div>
+    </div>
+  </body>
+</html>
