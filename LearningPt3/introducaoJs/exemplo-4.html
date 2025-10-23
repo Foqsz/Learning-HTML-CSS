@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médias</title>
+</head>
+<body>
+    <h1>Médias</h1>
+    <script>
+        let num1 = parseFloat(prompt("Digite a primeira nota: "));
+        let num2 = parseFloat(prompt("Digite a segunda nota: "));
+
+        let media = (num1 + num2) / 2;
+        alert("A média é: " + media);
+        document.body.innerHTML += "<p>A média é: " + media + "</p>";
+        media += 2;
+        document.body.innerHTML += "<p>A nova média é: " + media + "</p>";
+        media++;
+        document.body.innerHTML += "<p>A média incrementada é: " + media + "</p>";
+        media--;
+        document.body.innerHTML += "<p>A média decrementada é: " + media + "</p>";
+    </script>
+</body>
+</html>
