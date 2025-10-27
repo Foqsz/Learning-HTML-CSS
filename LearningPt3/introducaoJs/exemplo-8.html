@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 1</title>
+  </head>
+  <body>
+    <script>
+      let n1 = parseFloat(prompt("Digite um número de 0 a 10: "));
+      if (n1 > 10) alert("Número inválido!");
+      let n2 = parseFloat(prompt("Digite outro número de 0 a 10: "));
+      if (n2 > 10) alert("Número inválido!");
+
+      document.writeln("O segundo número é maior igual o primeiro: ", (n2 >= n1));
+      let media = (n1 + n2) / 2;
+      if(media >= 7){
+        var mmedia = "Aprovado";
+      } else {
+        var mmedia = "Reprovado";
+      }
+
+      if(media <= 4)
+        var mmedia2 = "Reprovado com Distinção";
+
+      document.writeln("<br>A média entre os dois números é: ", media, "-", mmedia, "-", (media<=4 ? mmedia2 : "" || n1 == 0 || n2 == 0));
+    </script>
+  </body>
+</html>
