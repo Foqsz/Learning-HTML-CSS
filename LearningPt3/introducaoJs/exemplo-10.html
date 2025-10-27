@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let diaSemana = prompt("Digite um número de 1 a 7:");
+
+        if (Number.isNaN(diaSemana)) {
+            document.writeln("Entrada inválida<br>");
+        } else {
+            switch (diaSemana) {
+                case "1":
+                    document.writeln("Segunda-Feira<br>");
+                    break;
+                case "2":
+                    document.writeln("Terça-Feira<br>");
+                    break;
+                case "3":
+                    document.writeln("Quarta-Feira<br>");
+                    break;
+                case "4":
+                    document.writeln("Quinta-Feira<br>");
+                    break;
+                case "5":
+                    document.writeln("Sexta-Feira<br>");
+                    break;
+                case "6":
+                    document.writeln("Sábado<br>");
+                    break;
+                case "7":
+                    document.writeln("Domingo<br>");
+                    break;
+                default:
+                    document.writeln("Número fora do intervalo 1-7<br>");
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
