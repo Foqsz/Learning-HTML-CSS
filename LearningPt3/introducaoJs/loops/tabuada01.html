@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = Number(prompt("Digite um número: "));
+        if(isNaN(number)){
+            document.writeln("Valor inválido, digite um número válido.");
+            throw new Error("Valor inválido");
+        }
+        let contador = 0;
+        let numbertwo = 1
+        while(contador <= 1000)
+        {
+            let resultado = number * numbertwo;
+            document.writeln("A tabuada de " + number + " é: " + number + " x " + numbertwo + " = " + resultado + "<br> <span>--------------------</span><br><br>");
+            contador++;
+            numbertwo++;
+        }
+        document.writeln("Fim do while");
+
+        for(i = 0; i <= 1000; i++){
+            let resultado = number * (i + 1);
+            document.writeln("A tabuada de " + number + " é: " + number + " x " + (i + 1) + " = " + resultado + "<br> <span>--------------------</span><br><br>");
+        }
+    </script>
+</body>
+</html>
