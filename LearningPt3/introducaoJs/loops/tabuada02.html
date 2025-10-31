@@ -12,7 +12,10 @@
         let n = parseInt(prompt("Digite um número para ver a tabuada: "));
 
         for(i = 1; i <= 1000; i++) {
-            document.write(`${n} x ${i} = ${n * i} <hr>`);
+            document.write(`${n} x ${i} = ${n * i} <br>`);
+            if(i % 10 === 0) {
+                document.write("<hr>");
+            }
         }
     </script>
 </body>
