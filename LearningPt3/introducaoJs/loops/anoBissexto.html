@@ -7,11 +7,16 @@
   </head>
   <body>
     <script>
-      let anoInicial = Number(1004);
-      let anoFinal = Number(2024);
+      let anoInicial = 1;
+      let anoFinal = 2025;
 
-      for (let ano = anoInicial; ano <= anoFinal; ano+=4) {
-        document.writeln(`${ano} - <br>`);
+      // percorre todos os anos (incremento de 1)
+      for (let ano = anoInicial; ano <= anoFinal; ano++) {
+        if (ano % 4 === 0 && (ano % 100 !== 0 || ano % 400 === 0)) {
+          document.writeln(`${ano} - É bissexto<br>`);
+        } else {
+          document.writeln(`${ano} - Não é bissexto<br>`);
+        }
       }
     </script>
   </body>
