@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h1>Arrays</h1>
+
+    <script>
+      // Criando um array com alguns elementos
+      let frutas = ["Maçã", "Banana", "Laranja"];
+
+      // Acessando elementos do array
+      console.log(frutas[0]); // Maçã
+      console.log(frutas[1]); // Banana
+      console.log(frutas[2]); // Laranja
+
+      // Adicionando um novo elemento ao array
+      frutas.push("Uva");
+      console.log(frutas); // ['Maçã', 'Banana', 'Laranja', 'Uva']
+
+      // Removendo o último elemento do array
+      frutas.pop();
+      console.log(frutas); // ['Maçã', 'Banana', 'Laranja']
+
+      // Iterando sobre os elementos do array
+      frutas.forEach(function (frutas) {
+        console.log("Essas são as frutas: " + frutas);
+      });
+    </script>
+  </body>
+</html>
