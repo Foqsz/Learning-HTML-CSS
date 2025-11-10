@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Array</title>
+  </head>
+  <body>
+    <h1>Desafio Array</h1>
+
+    <script>
+      const diasSemana = [
+        "Domingo",
+        "Segunda",
+        "Terça",
+        "Quarta",
+        "Quinta",
+        "Sexta",
+        "Sábado",
+      ];
+      const diaHoje = new Date().getDay(); // 0 (Domingo) a 6 (Sábado)
+      const data = new Date().getDate();
+      for (let i = 0; i < diasSemana.length; i++) {
+        if (diaHoje === i) {
+          console.log(diasSemana[i] + " - " + data + " - Hoje é esse dia!");
+        } else {
+          console.log(diasSemana[i] + " - ");
+        }
+      }
+    </script>
+  </body>
+</html>
