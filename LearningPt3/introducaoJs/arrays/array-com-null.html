@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nums = [1, 2, null, 4, null, undefined, NaN, null, 9];
+      let bool = Boolean(nums);
+
+      for (let i = 0; i < nums.length; i++) {
+        if (
+          nums[i] === null ||
+          nums[i] === undefined ||
+          Number.isNaN(nums[i])
+        ) {
+          bool = true;
+          alert(bool);
+          console.log(`O índice ${i} contém um valor nulo ou inválido.`);
+        } else {
+          bool = false;
+          alert(bool);
+          console.log(`O índice ${i} contém o valor: ${nums[i]}`);
+        }
+      }
+    </script>
+  </body>
+</html>
