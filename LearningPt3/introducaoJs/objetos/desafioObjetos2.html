@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const endereco = {
+            rua: "Av. Paulista",
+            numero: 1000,
+            cidade: "São Paulo",
+            estado: "SP",
+            cep: "01310-100"
+        }
+
+        const pessoa = {
+            nome: "Maria",
+            idade: 30,
+            endereco: endereco      
+        }
+
+        document.writeln(`${pessoa.nome}, mora na rua ${pessoa.endereco.rua}`);
+    </script>
+</body>
+</html>
