@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Pagina de Estudo sobre <i>DOM</i></h1>
+    
+    <script>
+        let titulo = document.getElementById("titulo");
+        console.log(titulo);
+
+        let att = prompt("Digite o novo titulo da pagina:");
+        if(att === null || att === ""){
+            titulo.textContent = titulo.textContent;
+        }
+        else{
+            titulo.textContent = att;
+        }
+
+    </script>
+</body>
+</html>
