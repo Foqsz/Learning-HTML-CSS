@@ -22,6 +22,17 @@
         }
 
         document.writeln(`${pessoa.nome}, mora na rua ${pessoa.endereco.rua}`);
+
+        for (let prop in pessoa) {
+            if (typeof pessoa[prop] === 'object' && pessoa[prop] !== null) {
+                document.writeln(`<br>${prop}:`);
+                for (let sub in pessoa[prop]) {
+                    document.writeln(`<br>&nbsp;&nbsp;${sub}: ${pessoa[prop][sub]}`);
+                }
+            } else {
+                document.writeln(`<br>${prop}: ${pessoa[prop]}`);
+            }
+        }
     </script>
 </body>
 </html>
