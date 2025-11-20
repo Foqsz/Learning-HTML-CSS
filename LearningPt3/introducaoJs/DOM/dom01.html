@@ -7,7 +7,17 @@
 </head>
 <body>
     <h1 id="titulo">Pagina de Estudo sobre <i>DOM</i></h1>
+    <ol id="lista">
+        <li>O que é DOM?</li>
+        <li>Como o JavaScript Interage com o DOM?</li>
+        <li>Selecionando Elementos do DOM</li>
+        <li>Modificando Elementos do DOM</li>
+        <li>Eventos no DOM</li>
+    </ol>
     
+    <input type="text" name="" id="newItem" placeholder="Adicionar novo item">
+    <button id="addButton">Adicionar Item</button>
+
     <script>
         let titulo = document.getElementById("titulo");
         console.log(titulo);
@@ -20,6 +30,22 @@
             titulo.textContent = att;
         }
 
+        let lista = document.getElementById("lista");
+        
+        const text = document.getElementById("newItem");
+        const btn = document.getElementById("addButton");
+
+        btn.addEventListener('click', () => {
+            const valor = text.value.trim();
+            if (!valor) return;
+
+            const li = document.createElement('li');
+            li.textContent = valor;
+            lista.appendChild(li);
+
+            text.value = '';
+            text.focus();
+        });
     </script>
 </body>
 </html>
