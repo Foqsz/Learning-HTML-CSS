@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li id="pessoas">
+        Nome: Ana Silva<br />
+        Idade: 28<br />
+      </li>
+      <li>
+        Nome: Bruno Souza<br />
+        Idade: 34<br />
+      </li>
+      <li>
+        Nome: Carla Mendes<br />
+        Idade: 22<br />
+      </li>
+      <li>
+        Nome: Daniel Costa<br />
+        Idade: 45<br />
+      </li>
+
+      <script>
+        const pessoasElement = document.getElementById("pessoas");
+
+        for (let i = 0; i < pessoas.length; i++) {
+          pessoasElement.innerHTML += `<br>Nome: ${pessoas[i].nome}<br>Idade: ${pessoas[i].idade}<br>`;
+        }
+      </script>
+    </ul>
+  </body>
+</html>
