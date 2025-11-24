@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: Tahoma;
+            margin: 0.1em;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <table id="alunosTable">
+      <th>Aluno</th>
+      <th>Notas</th>
+      <th>Média</th>
+    </table>
+    <script>
+      const alunos = {
+        nome: ["João"],
+        notas: [8, 7, 9],
+        media: function () {
+          let soma = 0;
+          for (let i = 0; i < this.notas.length; i++) {
+            soma += this.notas[i];
+          }
+          return (soma / this.notas.length).toFixed(2);
+        },
+      };
+
+      const table = document.getElementById("alunosTable"   );
+
+      table.innerHTML +=
+        "<tr><td>" +
+        alunos.nome[0] +
+        "</td><td>" +
+        alunos.notas +
+        "</td>  <td>" +
+        alunos.media() +
+        "</td></tr>";
+    </script>
+  </body>
+</html>
