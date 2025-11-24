@@ -4,7 +4,7 @@ Olá! 👋 Eu sou o Victor Vinicius Alves de Lima Souza, programador BackEnd e a
    
 ## O Que Esperar Neste Repositório
 
-Este repositório é o meu espaço de aprendizado, onde compartilho meus projetos e experimentos relacionados ao HTML/CSS.  
+Este repositório é o meu espaço de aprendizado, onde compartilho meus projetos e experimentos relacionados ao HTML/CSS e Javascript.  
 
 ## Contato  
 
