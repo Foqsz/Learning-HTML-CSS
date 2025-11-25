@@ -24,6 +24,7 @@
       <th>Aluno</th>
       <th>Notas</th>
       <th>Média</th>
+      <th>Status</th> 
     </table>
     <script>
       const alunos = {
@@ -38,7 +39,9 @@
         },
       };
 
-      const table = document.getElementById("alunosTable"   );
+      let aprovado = (alunos.media() >= 7) ? "Aprovado" : "Reprovado";
+
+      const table = document.getElementById("alunosTable");
 
       table.innerHTML +=
         "<tr><td>" +
@@ -47,6 +50,8 @@
         alunos.notas +
         "</td>  <td>" +
         alunos.media() +
+        "</td><td>" +
+        aprovado +
         "</td></tr>";
     </script>
   </body>
