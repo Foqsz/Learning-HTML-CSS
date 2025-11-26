@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        font-family: Tahoma;
+        margin: 0.1em;
+        background-color: black;
+        color: white;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid rgb(255, 255, 255);
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px; 
+        background-color: rgb(99, 104, 104);
+      }
+      th {
+        background-color: rgb(233, 22, 22);
+      }
+    </style>
+  </head>
+  <body>
+    <table id="alunosTable">
+      <th>Aluno</th>
+      <th>Notas</th>
+      <th>Média</th>
+      <th>Status</th>
+    </table>
+    <script>
+      const alunos = [
+        {
+          nome: ["João"],
+          notas: [8.7, 7.2, 9.5],
+        },
+        {
+          nome: ["Ana"],
+          notas: [5, 6.5, 4],
+        },
+        {
+          nome: ["Maria"],
+          notas: [6, 5, 7],
+        },
+        {
+          nome: ["Pedro"],
+          notas: [9, 8.5, 10],
+        }   
+      ];
+
+      const table = document.getElementById("alunosTable");
+      for (let i = 0; i < alunos.length; i++) {
+        let media =
+          (alunos[i].notas[0] + alunos[i].notas[1] + alunos[i].notas[2]) / 3;
+        let aprovado = (media >= 6) ? "Aprovado" : "Reprovado";
+        table.innerHTML += `<tr>
+        <td>${alunos[i].nome}</td>
+        <td>${alunos[i].notas}</td>
+        <td>${media.toFixed(2)}</td>
+        <td>${aprovado}</td>
+        </tr>`;
+      }
+    </script>
+  </body>
+</html>
