@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numberInput" placeholder="Digite um  número">
+    <input type="number" id="numberInput2" placeholder="Digite outro número">
+    <button onclick="soma(numberInput.value, numberInput2.value)">Somar</button>
+    <output id="result">Resultado: </output>
+
+    <script>
+        function soma(n1, n2){  
+            document.getElementById("result").innerHTML = "Resultado: " + (Number(n1) + Number(n2));
+        }
+    </script>
+</body>
+</html>
