@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Área do Círculo</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      input {
+        margin-right: 10px;
+      }
+      button {
+        padding: 5px 10px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Área da Circuferência</h1>
+
+    <input type="number" id="numberArea" placeholder="Digite o raio" />
+    <button onclick="calcularArea()">Calcular Área</button>
+    <button onclick="LimparTela()">Limpar</button>
+    
+    <p id="result">Resultado:</p>
+
+    <script>
+      const pi = Math.PI;
+      const raio = document.getElementById("numberArea");
+
+      function calcularArea() {
+        let area = pi * Math.pow(raio.value, 2);
+        document.getElementById("result").innerHTML =
+          "Resultado: " + area.toFixed(2);
+      }
+
+      function LimparTela() {
+        document.getElementById("result").innerHTML = "Resultado: ";
+        document.getElementById("numberArea").value = "";
+      }
+    </script>
+  </body>
+</html>
