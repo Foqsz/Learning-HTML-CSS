@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TryCatch</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+      input,
+      button,
+      output {
+        margin: 10px;
+        padding: 10px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="number" id="num1" placeholder="Número 1" />
+    <input type="number" id="num2" placeholder="Número 2" />
+    <button onclick="enviar()">Enviar</button>
+    <output id="result"></output>
+    <script>
+      function dividirNumeros(num1, num2) {
+        if (num2 === 0) {
+          throw new Error("Divisão por zero não é permitida.");
+        }
+        return num1 / num2;
+      }
+
+      function enviar() {
+        const num1 = Number(document.getElementById("num1").value);
+        const num2 = Number(document.getElementById("num2").value);
+        try {
+          const resultado = dividirNumeros(num1,num2);
+          document.getElementById("result").value = resultado;
+        } catch (error) {
+          document.getElementById("result").value = error.message;
+        }
+      }
+    </script>
+  </body>
+</html>
