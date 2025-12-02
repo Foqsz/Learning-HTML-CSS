@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções com retorno</title>
+  </head>
+  <body>
+    <input type="number" id="numberInput" placeholder="Digite um número " />
+    <input type="number" id="numberInput2" placeholder="Digite outro número" />
+    <button onclick="mostrarSoma()">Somar</button>
+    <button onclick="LimparTela()">Limpar</button>
+
+    <output id="result">Resultado: </output>
+
+    <script>
+      function mostrarSoma() {
+        let result = soma(numberInput.value, numberInput2.value);
+        document.getElementById("result").innerHTML = "Resultado: " + result;
+      }
+
+      function soma(n1, n2) {
+        return Number(n1) + Number(n2);
+      }
+
+      function LimparTela() {
+        document.getElementById("numberInput").value = "";
+        document.getElementById("numberInput2").value = "";
+        document.getElementById("result").innerHTML = "Resultado: ";
+      }
+    </script>
+  </body>
+</html>
