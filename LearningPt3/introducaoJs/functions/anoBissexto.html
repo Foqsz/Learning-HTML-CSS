@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano Bissexto</title>
+    <style>
+        input, button {
+            margin: 5px;
+        }
+        output {    
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="anoInput" placeholder="Digite o ano" oninput="anoBissexto(this.value)">
+    <output id="result">Resultado: </output>
+
+    <script>
+        function anoBissexto(ano){
+            if(Number(ano) % 4 === 0 && (Number(ano) % 100 !== 0 || Number(ano) % 400 === 0))
+            document.getElementById("result").innerHTML = `Resultado: ${ano} É bissexto. `;
+            else
+            document.getElementById("result").innerHTML = `Resultado: ${ano} Não é bissexto. `; 
+        }  
+    </script>
+</body>
+</html>
