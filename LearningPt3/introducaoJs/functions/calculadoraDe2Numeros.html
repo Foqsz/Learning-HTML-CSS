@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule dois Números</title>
+    <style>
+        input, button {
+            margin: 5px;
+        }
+        output {    
+            display: block;
+            margin: 10px 0;
+        }       
+    </style>
+</head>
+<body>
+    <input type="number" id="numberOne" placeholder="Digite o primeiro número">
+    <input type="number" id="numberTwo" placeholder="Digite o segundo número">
+    <input type="text" id="typeSum" placeholder="Soma, subtração, multiplicação, divisão">
+    <output id="result">Resultado: </output>
+    <button onclick="calcular(numberOne.value, numberTwo.value, typeSum.value)">Calcular</button>
+
+    <script>
+        function calcular(n1, n2, tipoCalculo){
+            let result;
+            let ParOrImpar;
+            switch(typeSum.value){
+                case "adição":
+                    result = Number(n1) + Number(n2);
+                    if(result % 2 === 0 ? ParOrImpar = "par" : ParOrImpar = "ímpar");
+                    document.getElementById("result").innerHTML = "Resultado: " + result + " e é " + ParOrImpar;
+                    break;
+                case "multiplicação":
+                    result = Number(n1) * Number(n2);
+                    if(result % 2 === 0 ? ParOrImpar = "par" : ParOrImpar = "ímpar");
+                    document.getElementById("result").innerHTML = "Resultado: " + result + " e é " + ParOrImpar;
+                    break;    
+                case "subtração":
+                    result = Number(n1) - Number(n2);
+                    if(result % 2 === 0 ? ParOrImpar = "par" : ParOrImpar = "ímpar");
+                    document.getElementById("result").innerHTML = "Resultado: " + result + " e é " + ParOrImpar;
+                    break;
+                case "divisão":
+                    result = Number(n1) / Number(n2);
+                    if(result % 2 === 0 ? ParOrImpar = "par" : ParOrImpar = "ímpar");
+                    document.getElementById("result").innerHTML = "Resultado: " + result + " e é " + ParOrImpar;
+                    break;
+                default:
+                    document.getElementById("result").innerHTML = "Tipo de cálculo inválido!";
+                    LimparTela();
+                    break;            
+            }
+
+            function LimparTela() {
+                document.getElementById("numberOne").value = "";
+                document.getElementById("numberTwo").value = "";
+                document.getElementById("typeSum").value = "";
+            }
+        }
+    </script>
+</body>
+</html>
