@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Areas</title>
+
+    <style>
+      html {
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      button {
+        margin: 10px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calcular Áreas</h1>
+    <input type="number" id="numberOne" placeholder="Primeiro número" />
+    <input type="number" id="numberTwo" placeholder="Segundo número" />
+    <button onclick="mostrarAreaQuadrado()">Calcular Área do Quadrado</button>
+    <button onclick="mostrarAreaRetangulo()">Calcular Área do Retângulo</button>
+    <button onclick="mostrarAreaTriangulo()">Calcular Área do Triângulo</button>
+
+    <output id="resultado">Resultado: </output>
+
+    <script>
+      function mostrarAreaQuadrado() {
+        let resultAreaQuadrado = calcularAreaQuadrado(
+          numberOne.value,
+          numberTwo.value
+        );
+        document.getElementById("resultado").innerHTML =
+          "Resultado: " + resultAreaQuadrado;
+      }
+
+      function mostrarAreaRetangulo() {
+        let resultAreaRetangulo = calcularAreaRetangulo(
+          numberOne.value,
+          numberTwo.value
+        );
+        document.getElementById("resultado").innerHTML =
+          "Resultado: " + resultAreaRetangulo;
+      }
+
+      function mostrarAreaTriangulo() {
+        let resultAreaTriangulo = calcularAreaTriangulo(
+          numberOne.value,
+          numberTwo.value
+        );
+        document.getElementById("resultado").innerHTML =
+          "Resultado: " + resultAreaTriangulo;
+      }
+    </script>
+    <script src="areas.js"></script>
+  </body>
+</html>
