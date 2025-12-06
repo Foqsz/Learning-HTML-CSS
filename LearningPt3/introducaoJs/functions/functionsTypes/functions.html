@@ -10,15 +10,26 @@
 
     <script>
 
-        function saudacao() {
-            console.log("Olá! Seja bem-vindo(a)!");
+        function saudacao(nome) {
+            console.log("Olá, " + nome + "! Seja bem-vindo(a)!");
         }
-        saudacao();
+        saudacao("João");
 
         const saudacao2 = function(nome){
             console.log("Olá, " + nome + "! Seja bem-vindo(a)!");
         }
         saudacao2("Maria");
+
+        const arr = [saudacao, saudacao2, function () {console.log("Função anônima no array");}];
+        arr[0]("Pedro");
+
+        const saudacao3 = (nome) => {
+            console.log("Olá, " + nome + "! Seja bem-vindo(a)!");
+        }
+        saudacao3("Ana");
+
+        const soma = (a, b) => a + b;
+        console.log("Soma: " + soma(5, 3));
     </script>
 </body>
 </html>
