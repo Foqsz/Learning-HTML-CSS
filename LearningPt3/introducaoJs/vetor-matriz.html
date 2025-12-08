@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor,Lista e Matriz</title>
+</head>
+<body>
+    <h1>Vetor, Lista e Matriz</h1>
+
+    <script>
+        const ola = () => {console.log("Olá Mundo!");}
+        ola();
+
+        const notas = [  [9, 7, 8], 
+                        [6, 5, 4], 
+                        [10, 9, 8] ];
+                        
+        console.log(notas[0][0]); // Acessa a nota 7;
+
+        for(let i = 0; i < notas.length; i++){
+            const notasAluno = notas[i];
+            console.log("Notas do aluno " + (i) + ":" + notasAluno);
+
+            for(let j = 0; j < notasAluno.length; j++){
+                console.log(notasAluno[j])
+                console.log("oi", notas[i][j]);
+            }
+        }
+    </script>
+</body>
+</html>
