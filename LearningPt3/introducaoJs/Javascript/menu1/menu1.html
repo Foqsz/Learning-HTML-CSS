@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="menuCss.css" />
+  </head>
+  <body>
+    <h1>++ Calculadora ++</h1>
+    <input
+      type="number"
+      id="menuNumberOne"
+      class="inputOne"
+      placeholder="Digite um número de 1 a 3"
+    />
+    <input
+      type="number"
+      id="menuNumberTwo"
+      class="inputTwo"
+      placeholder="Digite outro número de 1 a 3"
+    />
+
+    <button onclick="handleClick(menuNumberOne.value, menuNumberTwo.value)">
+      Enviar
+    </button>
+    <button onclick="limpaTela()">Limpar</button>
+    <output id="menuOutput">Resultado</output>
+    <script src="menu1.js"></script>
+    <script src="menu2.js"></script>
+  </body>
+</html>
