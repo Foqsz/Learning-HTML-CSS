@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function saudacao(){
+            console.log("Olá! Esta é uma função nomeada.");
+        }
+
+        (function(win, n2, b3){
+            console.log("Esta é uma função anônima autoexecutável!, com parâmetros:", win, n2, b3);
+
+            win.alert("Parâmetro win: ");
+            function interna(){
+                console.log("Função interna dentro da função anônima.");
+            }   
+            interna();
+        })(window, 20, 30);
+    </script>
+</body>
+</html>
