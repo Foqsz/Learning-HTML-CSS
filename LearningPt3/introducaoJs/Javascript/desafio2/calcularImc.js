@@ -1,20 +1,27 @@
-function calcularImc(peso, altura) {
+function calcularImc(peso, altura, callback) {
   if (isNaN(peso) || isNaN(altura)) {
-    throw new Error(
-      "Por favor, insira valores numéricos válidos para peso e altura."
-    );
+    throw new Error("Insira valores numéricos válidos.");
   }
 
   if (peso <= 0 || altura <= 0) {
     throw new Error("Peso e altura devem ser maiores que zero.");
   }
 
-  const Imc = Number(peso) / (Number(altura) * Number(altura));
-  const resultado = document.getElementById("result");
-  resultado.innerHTML = "Seu IMC é: " + Imc.toFixed(2);
-  classificarImc(Imc);
-  return Imc;
+  const imc = Number(peso) / (Number(altura) * Number(altura));
+
+  document.getElementById("result").innerHTML =
+    "Seu IMC é: " + imc.toFixed(2);
+
+  // console.log(callback);
+
+  // callback recebe o IMC
+  if (callback) {
+    callback(imc);
+  }
+
+  return imc;
 }
+
 
 function classificarImc(imc) {
   const el = document.getElementById("classification");
@@ -35,3 +42,5 @@ function classificarImc(imc) {
     el.innerHTML = "Classificação: Obesidade grau III";
   }
 }   
+
+// calcularImc(80, 1.75, classificarImc);
