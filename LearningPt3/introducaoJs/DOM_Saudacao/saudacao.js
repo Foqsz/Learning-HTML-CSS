@@ -1,19 +1,14 @@
 (function(){
-    const userName = "Victor";
-
-    const element = document.querySelector(".top-bar p");
-
+    const userName = null; 
+    
     if(userName) 
     {
-        element.innerHTML += "<b> " + userName + "</b>"; 
-    }
+        const topBarElement = document.createElement("div");
+        topBarElement.className = "top-bar";
+        topBarElement.innerHTML = `<p>Bem-vindo(a), ${userName}</p>`;
 
-    else
-    {
-        const elementRemove = element.parentElement;
-        elementRemove.parentElement.removeChild(elementRemove);
-    }
+        const elementoFather = document.querySelector(".hero");
 
-
-
+        elementoFather.insertBefore(topBarElement, elementoFather.firstElementChild);
+    } 
 })()
