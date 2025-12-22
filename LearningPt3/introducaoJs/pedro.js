@@ -1,0 +1,1 @@
+console.log("ola mundao da tecnologia e tudo mais ")

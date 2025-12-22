@@ -1,6 +1,6 @@
 const txtEmail = document.getElementById("txtEmail");
 const msgFeedback = document.getElementById("newsletterFeedback");
-
+const btnValue = document.getElementById("btn");
 
 function cadastrarEmail()
 {
@@ -10,5 +10,17 @@ function cadastrarEmail()
         msgFeedback.innerHTML = "Por favor, insira um email válido.";
         return;
     }
-    msgFeedback.innerHTML = `O email ${email} foi cadastrado com sucesso!`;
+
+    if(txtEmail.disabled)
+    {
+        msgFeedback.innerHTML = "";
+        txtEmail.disabled = false;
+        btnValue.innerHTML = "Enviar";
+        txtEmail.focus();
+    }
+    else{        
+        msgFeedback.innerHTML = `O email ${email} foi cadastrado com sucesso!`;
+        txtEmail.disabled = true;
+        btnValue.innerHTML = "Editar";
+    }
 } 
