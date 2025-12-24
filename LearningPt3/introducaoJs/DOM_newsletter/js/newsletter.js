@@ -7,20 +7,24 @@ function cadastrarEmail()
     let email = txtEmail.value;
     if(!email.includes("@"))
     {
-        msgFeedback.innerHTML = "Por favor, insira um email válido.";
+        msgFeedback.textContent = "Por favor, insira um email válido.";
         return;
     }
+    msgFeedback.textContent = `O email ${email} foi cadastrado com sucesso!`;
+    mudarBtn(); 
+} 
 
+function mudarBtn()
+{
     if(txtEmail.disabled)
     {
-        msgFeedback.innerHTML = "";
+        msgFeedback.textContent = "";
         txtEmail.disabled = false;
-        btnValue.innerHTML = "Enviar";
+        btnValue.textContent = "Enviar";
         txtEmail.focus();
     }
     else{        
-        msgFeedback.innerHTML = `O email ${email} foi cadastrado com sucesso!`;
         txtEmail.disabled = true;
-        btnValue.innerHTML = "Editar";
+        btnValue.textContent = "Editar";
     }
-} 
+}
