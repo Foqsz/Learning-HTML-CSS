@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eos?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eos?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eos?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eos?</p>
+
+    <script>
+            const arr1 = new Array(1, 2, 3);
+            console.log(arr1);  
+            console.log(arr1.length);
+
+            const arr2 = Array.from(arr1);
+            arr2.push(4);
+            console.log(arr2);  
+            console.log(arr2.length);
+
+            const arr3 = Array.of(5, 6, 7);
+            console.log(arr3);
+            console.log(arr3.length);
+
+            let paragrafos = document.querySelectorAll('p');
+            // paragrafos.forEach((item, index) => {
+            //     item.textContent += ` - ${index + 1}`;
+            // });
+
+            paragrafos = Array.from(paragrafos);
+
+            paragrafos.map((item, index) => {
+                item.textContent += ` - ${index + 1}`;
+            });
+    </script>
+</body>
+</html>
