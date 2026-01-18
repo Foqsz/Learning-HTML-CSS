@@ -1,11 +1,11 @@
-let str1 = "Hello, World!";
+let str1 = "Hello, World! HEHEHE";
 console.log(str1.replace("World", "JavaScript")); // "Hello, JavaScript!"
 
 console.log(str1.indexOf("World"));
 console.log(str1.includes("World"))
 
-console.log(str1.slice(7, 12)); // "World"
-console.log(str1.substring(7, 12)); // "World"
+console.log(str1.slice(0, 12)); // "World"
+console.log(str1.substring(0, 11) + "***"); // "World"
 
 console.log(str1.toUpperCase()); // "HELLO, WORLD!"
 console.log(str1.toLowerCase()); // "hello, world!"
