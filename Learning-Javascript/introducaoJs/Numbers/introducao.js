@@ -25,3 +25,19 @@ console.log(num.toLocaleString("en-US", {style: "currency", currency: "USD"}));
 
 num = 4456
 console.log(isNaN(num));
+
+let arr = [1, 2, 3, 4, 6]
+
+console.log(Math.max(...arr))
+console.log(Math.min(...arr))
+console.log(Math.round(12.3123123))
+console.log(Math.floor(59.9999999))
+console.log(Math.ceil(49.9999999))
+
+console.log(Math.pow(2, 3))
+console.log(2 ** 3)
+
+console.log(Math.sqrt(49))
+console.log(Math.cbrt(8))
+
+console.log(Math.random(...arr))
