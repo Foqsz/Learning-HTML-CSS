@@ -21,3 +21,7 @@ console.log(num.toLocaleString("en-EN"));
 console.log(num.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}));
 console.log(num.toLocaleString("pt-PT", {style: "currency", currency: "EUR"}));
 console.log(num.toLocaleString("en-US", {style: "currency", currency: "USD"}));
+
+
+num = 4456
+console.log(isNaN(num));
