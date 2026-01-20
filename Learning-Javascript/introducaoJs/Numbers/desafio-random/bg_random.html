@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-size: cover;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body id="bodyMain" style="background-image: url(images/1.jpg);">
+
+    <h1>Atualize a página para alterar a imagem de fundo</h1>
+
+    <script src="../sorteia.js"></script>
+    <script>
+        ;(function(){
+            const body = document.getElementById("bodyMain");
+            const totalImages = 5;
+            const minImages = 1;
+            const numRandom = getRandomNumber(minImages, totalImages, true);
+
+            body.style.backgroundImage = `url('./images/${numRandom}.jpg')`;
+            body.style.backgroundSize = 'cover';
+            body.style.backgroundRepeat = 'no-repeat';
+        })();
+    </script>
+
+</body>
+
+</html>
