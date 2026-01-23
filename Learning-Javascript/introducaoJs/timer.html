@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+</head>
+<body>
+    <h1 id="oi">Oi</h1>
+
+    <script>
+        let numbers = 0;
+        const h1 = document.getElementById("oi");
+
+        let intervalo;
+
+        function contador() {
+            numbers++;
+            h1.innerHTML = `aumentando... ${numbers}`;
+
+            if (numbers === 10) {
+                clearInterval(intervalo);
+                h1.innerHTML = `Terminou em ${numbers}`;
+            }
+        }
+
+        intervalo = setInterval(contador, 1000);
+    </script>
+</body>
+</html>
