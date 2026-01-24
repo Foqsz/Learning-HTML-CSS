@@ -7,22 +7,113 @@
   </head>
   <body>
     <button>abre com open</button>
+
+    <img
+      src="https://assets.dio.me/F4i96RTAdqn_cdXxi77T773z7go93ZLEe2LsXfdRnug/f:webp/q:80/L2FydGljbGVzL2NvdmVyLzE4MGZkNzQwLTk2YjEtNDlhMi04ODI4LTRmZTQ1M2MxNjZhMC5wbmc"
+      alt=""
+    />
+
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsa
+      maiores! Ullam sint eos mollitia nemo iure odio, ratione alias nihil
+      numquam assumenda, odit repudiandae id cupiditate eligendi ipsum. Sunt?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsa
+      maiores! Ullam sint eos mollitia nemo iure odio, ratione alias nihil
+      numquam assumenda, odit repudiandae id cupiditate eligendi ipsum. Sunt?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsa
+      maiores! Ullam sint eos mollitia nemo iure odio, ratione alias nihil
+      numquam assumenda, odit repudiandae id cupiditate eligendi ipsum. Sunt?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsa
+      maiores! Ullam sint eos mollitia nemo iure odio, ratione alias nihil
+      numquam assumenda, odit repudiandae id cupiditate eligendi ipsum. Sunt?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsa
+      maiores! Ullam sint eos mollitia nemo iure odio, ratione alias nihil
+      numquam assumenda, odit repudiandae id cupiditate eligendi ipsum. Sunt?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsa
+      maiores! Ullam sint eos mollitia nemo iure odio, ratione alias nihil
+      numquam assumenda, odit repudiandae id cupiditate eligendi ipsum. Sunt?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsa
+      maiores! Ullam sint eos mollitia nemo iure odio, ratione alias nihil
+      numquam assumenda, odit repudiandae id cupiditate eligendi ipsum. Sunt?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsa
+      maiores! Ullam sint eos mollitia nemo iure odio, ratione alias nihil
+      numquam assumenda, odit repudiandae id cupiditate eligendi ipsum. Sunt?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsa
+      maiores! Ullam sint eos mollitia nemo iure odio, ratione alias nihil
+      numquam assumenda, odit repudiandae id cupiditate eligendi ipsum. Sunt?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsa
+      maiores! Ullam sint eos mollitia nemo iure odio, ratione alias nihil
+      numquam assumenda, odit repudiandae id cupiditate eligendi ipsum. Sunt?
+    </p>
   </body>
   <script>
-    console.log("abrindo com html") 
+    console.log("abrindo com html");
 
-    if(opener){
-        opener.teste2();
-    } 
+    if (opener) {
+      opener.teste2();
+    }
 
-    function teste2(){
-            console.log("funcao teste2 executada")
-        }
+    function teste2() {
+      console.log("funcao teste2 executada");
+    }
 
     console.log(opener);
 
     document.querySelector("button").onclick = function () {
-      window.open("history.html", "oi-janela", "width=400,height=400", "top=200,left=200", "menubar=no", "status=no", "toolbar=no");
+      window.open(
+        "history.html",
+        "oi-janela",
+        "width=400,height=400",
+        "top=200,left=200",
+        "menubar=no",
+        "status=no",
+        "toolbar=no",
+      );
     };
+
+    window.addEventListener("load", function () {
+      console.log("pagina carregada");
+    });
+
+    window.addEventListener("DOMContentLoaded", function () {
+      console.log("DOM carregado");
+    });
+
+    window.addEventListener("resize", function () {
+      console.log("resize", innerWidth, innerHeight);
+    });
+
+    window.addEventListener("scroll", function () {
+      console.log("scroll", pageYOffset);
+    });
+
+    window.addEventListener("unload", function () {
+      alert("unload");
+      debugger;
+      console.log("unload");
+    });
+
+    window.addEventListener("beforeunload", function () {
+      console.log("beforeunload");
+    });
   </script>
 </html>
