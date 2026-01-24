@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>abre com open</button>
+  </body>
+  <script>
+    console.log("abrindo com html") 
+
+    if(opener){
+        opener.teste2();
+    } 
+
+    function teste2(){
+            console.log("funcao teste2 executada")
+        }
+
+    console.log(opener);
+
+    document.querySelector("button").onclick = function () {
+      window.open("history.html", "oi-janela", "width=400,height=400", "top=200,left=200", "menubar=no", "status=no", "toolbar=no");
+    };
+  </script>
+</html>

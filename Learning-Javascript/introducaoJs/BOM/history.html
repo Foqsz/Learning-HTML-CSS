@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+</head>
+<body>
+    <button id="btnBack">Go Back</button>
+    <button id="btnForward">Go Forward</button>
+    <a href="https://www.google.com">Google</a>
+
+    <button id="btnClose">Fechar</button>
+
+    <script>
+        const btnBack = document.getElementById("btnBack");
+        const btnForward = document.getElementById("btnForward");
+
+        btnBack.addEventListener("click", function(){
+            history.back();
+        });
+
+        btnForward.addEventListener("click", function(){
+            history.forward();
+        });
+
+        const btnClose = document.getElementById("btnClose");
+        btnClose.addEventListener("click", function(){
+            window.close();
+        }); 
+
+        if(opener){
+            opener.teste2();
+        }
+
+        console.log(opener)
+    </script>
+</body>
+</html>
