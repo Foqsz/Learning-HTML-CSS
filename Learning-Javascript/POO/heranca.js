@@ -9,7 +9,11 @@ Animal.prototype.obterTipo = function(){
 function Cachorro(nome, tipo){
     this.nome = nome;
     Animal.call(this, tipo);
-    this.constructor = Cachorro;
+    // this.constructor = Cachorro;
+    Object.defineProperty(Cachorro.prototype, "constructor",{
+        value: Cachorro,
+        enumerable: false
+    })
 }
 
 Cachorro.prototype = new Animal()
@@ -18,5 +22,12 @@ let rex = new Cachorro("Rex", "Mamífero");
 console.log(rex);
 
 for(let prop in rex){
-    console.log(prop)
+    if(rex.hasOwnProperty(prop))
+        console.log(prop)
 }
+
+console.log(rex instanceof Array);
+console.log(Object.prototype.isPrototypeOf(rex));
+console.log(Object.getPrototypeOf(rex));
+console.log(rex.__proto__)
+console.log(rex.__pronto__ === Object.getPrototypeOf(rex))
