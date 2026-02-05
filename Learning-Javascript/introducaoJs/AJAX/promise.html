@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <script>
+        console.log("Iniciando o processo...");
+
+        const promesa = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Processo concluído com sucesso pelo timeout!");
+                // reject("Ocorreu um erro durante o processo.");
+            }, 1000)
+        })
+        promesa
+        .then(resposta => console.log(resposta))
+        .then(() => {
+            console.log("Executando o próximo passo após a promessa ser resolvida.");
+            return "Outro valor para o próximo then.";
+        })
+        .then((resposta) => {
+            console.log("Mais um passo após o anterior.", resposta);
+        }).catch(erro => console.log("Erro capturado:", erro))
+        .finally(() => {
+            console.log("Execução finalizada, seja com sucesso ou erro.");
+        });
+
+        console.log("Fim do Código");
+    </script>
+</body>
+</html>
