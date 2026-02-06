@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lista"></ul>
+    <script>
+        console.log("init")
+        const lista = document.querySelector("#lista")
+
+        function mostraDados(dados){
+            let resultado = "";
+
+            dados.forEach(dados => {
+                console.log(dados)
+                resultado += `<li>Nome: ${dados.nome}, sobrenome: ${dados.sobrenome}, idade: ${dados.idade}</li>`
+            })
+            lista.innerHTML = resultado;
+        }
+
+        fetch("./dados.json")
+            .then(resposta =>{
+                if(!resposta.ok){
+                    throw Error("Erro na requisição.")
+                }
+                return resposta.json();
+            })
+            .then(dados => {
+                console.log(dados);
+                mostraDados(dados);
+            })
+            .catch(erro => console.log("Error: " + erro))
+            
+        console.log("finish")
+    </script>
+</body>
+</html>
