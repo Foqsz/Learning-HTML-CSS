@@ -29,11 +29,23 @@
 </head>
 <body>
     <div class="dados"></div>
+
+    <form action="#" method="POST" id="formCadastrar">
+        <input type="text" name="title" id="title" placeholder="Title">
+        <textarea name="body" id="body" placeholder="Body"></textarea>
+        <input type="submit" id="btnPost" value="cadastrar">
+    </form>
     <script>
+        document.querySelector("#formCadastrar").addEventListener("submit", function(event){
+            event.preventDefault();
+            newPost(1);
+        });
+
         async function getPostersUsers(id){
-            const url = `https://jsonplaceholder.typicode.com/users/${id}/posts`;
+            const urlGet = `https://jsonplaceholder.typicode.com/users/${id}/posts`;
+
             try{
-                const response = await fetch(`${url}`)
+                const response = await fetch(`${urlGet}`)
 
                 if(!response.ok){
                     throw Error("Erro na requisição.")
@@ -49,13 +61,40 @@
 
         getPostersUsers(1);
 
+        async function newPost(userId){
+            const urlPost = `https://jsonplaceholder.typicode.com/posts`;
+            const body = document.querySelector("#body").value;
+            const title = document.querySelector("#title").value;
+            try{
+                const response = await fetch(`${urlPost}`, 
+                { 
+                    method: 'POST',
+                    body: JSON.stringify({
+                            title: title,
+                            body: body,
+                            userId: userId
+                }),
+                headers:{
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            });
+
+            console.log(response);
+            console.log("teste"+response.status);
+            const dados = await response.json();
+            getDados(dados);
+            
+            }catch(error){
+                console.log(error);
+            }
+        }
+
         function getDados(dados){
             const divDados = document.querySelector(".dados");
+            divDados.innerHTML = "";
 
             if (!Array.isArray(dados)) {
-                divDados.textContent = 'Nenhum dado disponível.';
-                console.log(dados);
-                return;
+                dados = [dados]; // Se for um objeto, transforma em um array para facilitar a iteração
             }
 
             dados.forEach(post => {
