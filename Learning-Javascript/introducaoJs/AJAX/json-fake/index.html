@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Fake</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(49, 48, 48);
+        } 
+        .dados{
+            width: 50%;
+            margin: 0 auto;
+        }
+        p{
+            color: white;
+            font-family: Tahoma;
+        }
+        p:nth-child(1){
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+        }
+        p:hover{
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="dados"></div>
+    <script>
+        async function getPostersUsers(id){
+            const url = `https://jsonplaceholder.typicode.com/users/${id}/posts`;
+            try{
+                const response = await fetch(`${url}`)
+
+                if(!response.ok){
+                    throw Error("Erro na requisição.")
+                }
+
+                const dados = await response.json();
+
+                getDados(dados);
+            }catch(error){
+                console.log(error);
+            }
+        }
+
+        getPostersUsers(1);
+
+        function getDados(dados){
+            const divDados = document.querySelector(".dados");
+
+            if (!Array.isArray(dados)) {
+                divDados.textContent = 'Nenhum dado disponível.';
+                console.log(dados);
+                return;
+            }
+
+            dados.forEach(post => {
+                const article = document.createElement('article');
+                const title = document.createElement('p');
+                const body = document.createElement('p');
+                const userId = document.createElement('p');
+                const id = document.createElement('p');
+                const hr = document.createElement('hr');
+
+                userId.textContent = `User ID: ${post.userId}`;
+                id.textContent = `ID Post: ${post.id}`;
+                title.textContent = `Title Post: ${post.title}`;
+                body.textContent = `Body Post: ${post.body}`;
+
+
+                article.appendChild(userId);
+                article.appendChild(id);
+                article.appendChild(title);
+                article.appendChild(body);
+                article.appendChild(hr);
+                divDados.appendChild(article);
+
+            });
+
+            console.log(dados);
+        }
+    </script>
+</body>
+</html>
