@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my music library</title>
+</head>
+<body>
+    <script>
+        const urlLogin = "https://mylibrarymusic.azurewebsites.net/Login";
+
+        async function getLogin(){
+            try{
+                const response = await fetch(`${urlLogin}`,{
+                    method: 'POST',
+                    body: JSON.stringify({
+                        email: "vvs@gmail.com",
+                        password: "123456789"
+                }),
+                headers:{
+                    "Content-type": "application/json; charset=UTF-8"
+                },
+            });
+
+                if(!response.ok){
+                    throw Error("Erro na requisição.")
+                }
+
+                const dados = await response.json();
+
+                console.log(dados);
+
+                const accessToken = dados.tokens?.accessToken;
+                const refreshToken = dados.tokens?.refreshToken;
+
+                console.log("accessToken:", accessToken);
+                console.log("refreshToken:", refreshToken);
+
+            }catch(error){
+                console.log(error);
+            }
+        }
+        getLogin();
+    </script>
+</body>
+</html>
