@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductClientHub</title>
+</head>
+<body>
+    <script>
+        async function loginAndFetchClients() {
+            try {
+                const loginResponse = await fetch("https://localhost:7298/api/Login", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        email: "pereira@gmail.com",
+                        password: "123123a"
+                    })
+                });
+                const loginData = await loginResponse.json();
+                const token = loginData.token;
+                console.log("Token recebido:", token);
+
+                if (token) {
+                    const clientsResponse = await fetch("https://localhost:7298/api/Clients", {
+                        method: "GET",
+                        headers: {
+                            "Authorization": "Bearer " + token
+                        }
+                    });
+                    const clientsData = await clientsResponse.json();
+                    console.log("Clients:", clientsData);
+
+                        const productsResponse = await fetch("https://localhost:7298/api/Products", {
+                        method: "GET",
+                        headers: {
+                            "Authorization": "Bearer " + token
+                        }
+                    });
+                    const productsData = await productsResponse.json();
+                    console.log("Products:", productsData);
+                } else {
+                    console.error("Token não recebido.");
+                }
+            } catch (error) {
+                console.error("Erro:", error);
+            }
+        }
+
+        loginAndFetchClients();
+    </script>
+</body>
+</html>
